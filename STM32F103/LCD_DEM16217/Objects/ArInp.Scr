@@ -1,0 +1,3 @@
+--create .\Objects\LCD_DEM16217.lib
+.\objects\lcd_dem16217.o
+.\MYLIBS\WAIT_STM32F10X\WAIT_STM32F10X.lib

@@ -1,0 +1,12 @@
+.\objects\lcd_i2c.o: LCD_I2C.c
+.\objects\lcd_i2c.o: LCD_I2C.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h
+.\objects\lcd_i2c.o: .\RTE\_BluePill\RTE_Components.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm3.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h
+.\objects\lcd_i2c.o: ./MYLIBS/I2C_STM32F10X/I2C_STM32F10X.h
+.\objects\lcd_i2c.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\objects\lcd_i2c.o: ./MYLIBS/WAIT_STM32F10X/WAIT_STM32F10X.h

@@ -1,0 +1,21 @@
+Dependencies for Project 'LCD_I2C', Target 'BluePill': (DO NOT MODIFY !)
+F (.\LCD_I2C.c)(0x5FE9F5F8)(--c99 -c --cpu Cortex-M3 -D__EVAL -g -O0 --apcs=interwork --split_sections -I ./MYLIBS/WAIT_STM32F10X -I ./MYLIBS/I2C_STM32F10X-I.\RTE\Device\STM32F103C8-I.\RTE\_BluePill-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include-D__UVISION_VERSION="524" -D_RTE_ -DSTM32F10X_MD-o .\objects\lcd_i2c.o --omf_browse .\objects\lcd_i2c.crf --depend .\objects\lcd_i2c.d)
+I (LCD_I2C.h)(0x5F48F7DC)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h)(0x58259ADC)
+I (.\RTE\_BluePill\RTE_Components.h)(0x5F468744)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\core_cm3.h)(0x5898ABFA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x588BE5B4)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_compiler.h)(0x5898ABFA)
+I (C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.0.1\CMSIS\Include\cmsis_armcc.h)(0x5898ABFA)
+I (C:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h)(0x58259ADC)
+I (./MYLIBS/I2C_STM32F10X/I2C_STM32F10X.h)(0x5F481556)
+I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x588BE5B4)
+I (./MYLIBS/WAIT_STM32F10X/WAIT_STM32F10X.h)(0x5EB9B192)
+F (.\LCD_I2C.h)(0x5F48F7DC)()
+F (.\MYLIBS\WAIT_STM32F10X\WAIT_STM32F10X.h)(0x5EB9B192)()
+F (.\MYLIBS\WAIT_STM32F10X\WAIT_STM32F10X.lib)(0x5EB9B194)()
+F (.\MYLIBS\I2C_STM32F10X\I2C_STM32F10X.h)(0x5F481556)()
+F (.\MYLIBS\I2C_STM32F10X\I2C_STM32F10X.lib)(0x5F481582)()
+F (RTE\Device\STM32F103C8\RTE_Device.h)(0x59283406)()
+F (RTE\Device\STM32F103C8\startup_stm32f10x_md.s)(0x58258CCC)()
+F (RTE\Device\STM32F103C8\system_stm32f10x.c)(0x58258CCC)()
