@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   SYS_CLK.h                                                     */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        25.08.2020                                                    */
 /* Description: SYS_CLK Library                                               */
@@ -25,7 +25,7 @@
 /*                                                                            */
 /* Purpose:   set SystemCoreClock to 72 MHz                                   */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void set_clock_72MHz(void);
 

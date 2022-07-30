@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   TIMEOUT_STM32L432XX.h                                         */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        28.09.2021                                                    */
 /* Description: TIMEOUT_STM32L432XX Library                                   */

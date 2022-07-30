@@ -5,7 +5,7 @@
 /* Date:        07.05.2020                                                    */
 /* Description: Wait for x us or x ms                                         */
 /******************************************************************************/
-/* History: 	V1.00  creation                                                 */
+/* History:   V1.00  creation                                                 */
 /******************************************************************************/
 #ifndef WAIT_STM32F10X_H_INCLUDED
 #define WAIT_STM32F10X_H_INCLUDED

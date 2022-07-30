@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   ONEWIRE_STM32F10X.h                                           */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        10.07.2020                                                    */
 /* Description: 1-wire Library                                                */
@@ -26,7 +26,7 @@
 /*                                                                           */
 /* Purpose:   initializes Setup                                              */
 /* Input:     Port: GPIOA-GPIOE, Pin: 0-15                                   */
-/* return:	                                                                 */
+/* return:                                                                   */
 /*****************************************************************************/
 EXPORT void ow_init(GPIO_TypeDef *GPIOx,int Pin);
 
@@ -36,7 +36,7 @@ EXPORT void ow_init(GPIO_TypeDef *GPIOx,int Pin);
 /* Purpose:   Read Bit                                                       */
 /*            This function will read one single bit from the bus.           */
 /* Input:                                                                    */
-/* return:	                                                                 */
+/* return:                                                                   */
 /*****************************************************************************/
 EXPORT uint8_t ow_read_bit(void);
 
@@ -46,7 +46,7 @@ EXPORT uint8_t ow_read_bit(void);
 /* Purpose:   Read Byte                                                      */
 /*            This function will read a complete byte from the bus.          */
 /* Input:                                                                    */
-/* return:	                                                                 */
+/* return:                                                                   */
 /*****************************************************************************/
 EXPORT uint8_t ow_read_byte(void);
 
@@ -56,7 +56,7 @@ EXPORT uint8_t ow_read_byte(void);
 /* Purpose:   Write Bit                                                      */
 /*            This function will write one single bit on the bus.            */
 /* Input:                                                                    */
-/* return:	                                                                 */
+/* return:                                                                   */
 /*****************************************************************************/
 EXPORT void ow_write_bit(uint8_t val);
 
@@ -66,7 +66,7 @@ EXPORT void ow_write_bit(uint8_t val);
 /* Purpose:   Write Byte                                                     */
 /*            This function will write a complete byte on the bus.           */
 /* Input:                                                                    */
-/* return:	                                                                 */
+/* return:                                                                   */
 /*****************************************************************************/
 EXPORT void ow_write_byte(uint8_t val);
 
@@ -78,7 +78,7 @@ EXPORT void ow_write_byte(uint8_t val);
 /*            if there is at least one 1-wire-component connected             */
 /*            to the bus (0) or not (1).                                      */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT uint8_t ow_send_mri(void);
 

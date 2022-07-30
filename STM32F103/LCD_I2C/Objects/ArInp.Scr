@@ -1,4 +1,0 @@
---create .\Objects\LCD_I2C.lib
-.\objects\lcd_i2c.o
-.\MYLIBS\WAIT_STM32F10X\WAIT_STM32F10X.lib
-.\MYLIBS\I2C_STM32F10X\I2C_STM32F10X.lib

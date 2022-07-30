@@ -1,11 +1,11 @@
-/******************************************************************************/ 
+/******************************************************************************/
 /* File Name:   EA_DOGM204_A.h                                                */
-/* Autor: 	    Berger Jonas                                                  */
-/* Version: 	  V1.00                                                         */
-/* Date: 		    18.02.2018                                                    */
+/* Autor:       Berger Jonas                                                  */
+/* Version:     V1.00                                                         */
+/* Date:        18.02.2018                                                    */
 /* Description: EA DOGM204-A LCD Display interfacing                          */
 /******************************************************************************/
-/* History: 	V1.00  creation										                              */
+/* History:   V1.00  creation                                                 */
 /******************************************************************************/
 #ifndef EA_DOGM204_A_H_INCLUDED
 #define EA_DOGM204_A_H_INCLUDED
@@ -17,7 +17,7 @@
 #define EXPORT
 #else
 #define EXPORT extern
-#endif 
+#endif
 
 /* ----------------------------Exported functions --------------------------- */
 
@@ -26,7 +26,7 @@
 /*                                                                            */
 /* Purpose:   Wait for x ms                                                   */
 /* Input:     Time in ms                                                      */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void Delay(int);
 
@@ -35,7 +35,7 @@ EXPORT void Delay(int);
 /*                                                                            */
 /* Purpose:   Initialize LCD-Display                                          */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_Init(void);
 
@@ -44,7 +44,7 @@ EXPORT void LCD_Init(void);
 /*                                                                            */
 /* Purpose:   Send char to display                                            */
 /* Input:     Hex-value(integer) or direct-char of ASCII-character            */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_PutChar(char ascii);
 
@@ -53,7 +53,7 @@ EXPORT void LCD_PutChar(char ascii);
 /*                                                                            */
 /* Purpose:   Send string to display                                          */
 /* Input:     String                                                          */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_PutString(char string[]);
 
@@ -62,7 +62,7 @@ EXPORT void LCD_PutString(char string[]);
 /*                                                                            */
 /* Purpose:   Move cursor according to given offset                           */
 /* Input:     value of offset                                                 */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_Cursor(int anz);
 
@@ -71,7 +71,7 @@ EXPORT void LCD_Cursor(int anz);
 /*                                                                            */
 /* Purpose:   Clear display content                                           */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_Clear(void);
 
@@ -80,7 +80,7 @@ EXPORT void LCD_Clear(void);
 /*                                                                            */
 /* Purpose:   Move to specific line                                           */
 /* Input:     Macros: LINE1, LINE2, LINE3 or LINE4                            */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_SetPosition(char pos);
 
@@ -89,7 +89,7 @@ EXPORT void LCD_SetPosition(char pos);
 /*                                                                            */
 /* Purpose:   Change view: bottom view, top view                              */
 /* Input:     Macros: BOTTOMVIEW or TOPVIEW                                   */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_SetView(char view);
 
@@ -99,7 +99,7 @@ EXPORT void LCD_SetView(char view);
 /* Purpose:   Select ROMA, ROMB, ROMC                                         */
 /*            Difference in character-set (see datasheet)                     */
 /* Input:     Macros: ROMA, ROMB or ROMC                                      */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_SetROM(char rom);
 
@@ -108,7 +108,7 @@ EXPORT void LCD_SetROM(char rom);
 /*                                                                            */
 /* Purpose:   Send character to display                                       */
 /* Input:     Char                                                            */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_WriteChar(char character);
 
@@ -117,35 +117,35 @@ EXPORT void LCD_WriteChar(char character);
 /*                                                                            */
 /* Purpose:   Send string to display                                          */
 /* Input:     String                                                          */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void LCD_WriteString(char *string);
 
 /*______________________________ BITBANDING __________________________________*/
 #define GPIOB_ODR GPIOB_BASE + 3*sizeof(uint32_t) //Calc peripheral address GPIOB ODR
-#define BITBAND_PERI(a,b) ((PERIPH_BB_BASE + (a-PERIPH_BASE)*32 + (b*4)))  
+#define BITBAND_PERI(a,b) ((PERIPH_BB_BASE + (a-PERIPH_BASE)*32 + (b*4)))
 #define RESET  *((volatile unsigned long *)(BITBAND_PERI(GPIOB_ODR,11))) //RESET/PB11
-#define NSS   *((volatile unsigned long *)(BITBAND_PERI(GPIOB_ODR,12)))	 //NSS/PB12
+#define NSS   *((volatile unsigned long *)(BITBAND_PERI(GPIOB_ODR,12)))  //NSS/PB12
 
 /*___________________________ CONSTANT DEFINITION ____________________________*/
-#define HOME_L1			0x80
-#define LINE1				0
-#define LINE2				LINE1+0x20
-#define LINE3				LINE1+0x40
-#define	LINE4 			LINE1+0x60
+#define HOME_L1     0x80
+#define LINE1       0
+#define LINE2       LINE1+0x20
+#define LINE3       LINE1+0x40
+#define LINE4       LINE1+0x60
 
-#define DISPLAY_ON 	0x04
+#define DISPLAY_ON  0x04
 #define DISPLAY_OFF 0x03
-#define CURSOR_ON		0x02
-#define CURSOR_OFF	0x05
-#define BLINK_ON		0x01
-#define BLINK_OFF		0x06
+#define CURSOR_ON   0x02
+#define CURSOR_OFF  0x05
+#define BLINK_ON    0x01
+#define BLINK_OFF   0x06
 
-#define TOPVIEW			0x05
-#define BOTTOMVIEW	0x06
-#define ROMA				0x00
-#define ROMB				0x04
-#define ROMC				0x0C
+#define TOPVIEW     0x05
+#define BOTTOMVIEW  0x06
+#define ROMA        0x00
+#define ROMB        0x04
+#define ROMC        0x0C
 
 #undef  EXPORT
 #endif /* __EA_DOGM204_A_H */

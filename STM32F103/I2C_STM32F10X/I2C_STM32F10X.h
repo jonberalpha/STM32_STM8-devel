@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   I2C_STM32F10X.h                                               */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        27.08.2020                                                    */
 /* Description: I2C Library                                                   */
@@ -35,10 +35,10 @@
 /*            @param apb1_clock clock frequency of APB1 peripherals           */
 /*                                                                            */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
-EXPORT void i2c_init(I2C_TypeDef* registerStruct, bool remap, bool fastMode,  
-            uint32_t apb1_clock);
+EXPORT void i2c_init(I2C_TypeDef* registerStruct, bool remap, bool fastMode,
+                     uint32_t apb1_clock);
 
 /******************************************************************************/
 /*            SUBROUTINE:    i2c_communicate()                                */
@@ -58,10 +58,10 @@ EXPORT void i2c_init(I2C_TypeDef* registerStruct, bool remap, bool fastMode,
 /*            @return Number of received data bytes, or -1 if sending failed  */
 /*                                                                            */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
-EXPORT int i2c_communicate(I2C_TypeDef* registerStruct, uint8_t slave_addr, 
-    uint8_t* send_buffer, int send_size, uint8_t* receive_buffer, int receive_size);
+EXPORT int i2c_communicate(I2C_TypeDef* registerStruct, uint8_t slave_addr,
+                           uint8_t* send_buffer, int send_size, uint8_t* receive_buffer, int receive_size);
 
 #undef EXPORT
 #endif /* __I2C_STM32F10X_H */

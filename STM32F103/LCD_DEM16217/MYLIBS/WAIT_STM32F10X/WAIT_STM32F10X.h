@@ -1,15 +1,15 @@
 /******************************************************************************/
-/*   (C) Copyright PRIVATE  2020 All rights reserved. AUSTRIA                 */ 
-/*                                                                            */ 
+/*   (C) Copyright PRIVATE  2020 All rights reserved. AUSTRIA                 */
+/*                                                                            */
 /* File Name:   WAIT_STM32F10X.h                                              */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        07.05.2020                                                    */
 /* Description: Warte x us bzw x ms ab                                        */
 /*              Header-File stellt defines und Prototypen zur Verfuegung      */
 /*              Befehle sind hier ausprogrammiert                             */
 /******************************************************************************/
-/* History: 	V1.00  creation                                                 */
+/* History:   V1.00  creation                                                 */
 /******************************************************************************/
 #ifndef WAIT_STM32F10X_H_INCLUDED
 #define WAIT_STM32F10X_H_INCLUDED
@@ -21,7 +21,7 @@
 #define EXPORT
 #else
 #define EXPORT extern
-#endif 
+#endif
 
 /*____________________________ EXPORTED FUNCTIONS ____________________________*/
 /******************************************************************************/
@@ -29,7 +29,7 @@
 /*                                                                            */
 /* Aufgabe:   init Wait                                                       */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void wait_init(void);
 
@@ -38,7 +38,7 @@ EXPORT void wait_init(void);
 /*                                                                            */
 /* Aufgabe:   wartet x us ab                                                  */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void wait_us(uint32_t us);
 
@@ -47,7 +47,7 @@ EXPORT void wait_us(uint32_t us);
 /*                                                                            */
 /* Aufgabe:   wartet x ms ab                                                  */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void wait_ms(uint32_t ms);
 

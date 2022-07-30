@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   SENS_DS18X20.c                                                */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        15.06.2020                                                    */
 /* Description: Get temperature of the 1-wire-sensor                          */
@@ -34,7 +34,7 @@
 //Calc peripheral address GPIOB ODR
 #define GPIOB_ODR GPIOB_BASE + 3*sizeof(uint32_t)
 //Calc peripheral address GPIOA IDR
-#define GPIOB_IDR GPIOB_BASE + 2*sizeof(uint32_t) 
+#define GPIOB_IDR GPIOB_BASE + 2*sizeof(uint32_t)
 //Calc Bit Band Adress from peripheral address: a = peripheral address b = Bit number:
 #define BITBAND_PERI(a,b) ((PERIPH_BB_BASE + (a-PERIPH_BASE)*32 + (b*4)))
 //BB fuer PB1
@@ -47,7 +47,7 @@
 /*                                                                            */
 /* Purpose:   initializes DS18X20                                             */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void DS18X20_init(void);
 
@@ -56,7 +56,7 @@ EXPORT void DS18X20_init(void);
 /*                                                                            */
 /* Purpose:   get_temperature                                                 */
 /* Input:                                                                     */
-/* return:	  float temp                                                      */
+/* return:    float temp                                                      */
 /******************************************************************************/
 EXPORT float get_temperature(void);
 

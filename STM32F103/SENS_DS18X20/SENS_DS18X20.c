@@ -1,6 +1,6 @@
-/******************************************************************************/ 
+/******************************************************************************/
 /* File Name:   SENS_DS18X20.c                                                */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        15.06.2020                                                    */
 /* Description: Get temperature of the 1-wire-sensor                          */
@@ -38,9 +38,9 @@ static float conv_temp(void);
 /******************************************************************************/
 static void init_ports(void)
 {
-	RCC->APB2ENR |= RCC_APB2ENR_IOPBEN; //enable CLK for GPIOB
-	GPIOB->CRL &= ~0x0F;               //Konfig-Bits von PB1 loeschen
-	GPIOB->CRL |= 0x07;                //GPOOD...IR=7; AFOOD...IR=F; AFOPP...IR=B
+  RCC->APB2ENR |= RCC_APB2ENR_IOPBEN; //enable CLK for GPIOB
+  GPIOB->CRL &= ~0x0F;               //Konfig-Bits von PB1 loeschen
+  GPIOB->CRL |= 0x07;                //GPOOD...IR=7; AFOOD...IR=F; AFOPP...IR=B
 }
 
 /******************************************************************************/
@@ -52,8 +52,8 @@ static void init_ports(void)
 /******************************************************************************/
 void DS18X20_init(void)
 {
-	init_ports();
-	wait_init();
+  init_ports();
+  wait_init();
 }
 
 /******************************************************************************/
@@ -68,16 +68,16 @@ void DS18X20_init(void)
 /******************************************************************************/
 static uint8_t send_mri(void)
 {
-	uint8_t rec;
-	
-  DQ_o = 0;							 // DQ to 0 for MRI
+  uint8_t rec;
+
+  DQ_o = 0;              // DQ to 0 for MRI
   wait_us(490);          // wait for >480 us
   DQ_o = 1;              // config the  DQ-IO as input (high-z -> pull up)
   wait_us(40);
   rec = DQ_i;            // read the level (if low, slave available)
   wait_us(450);          // wait for end of slot
-  
-	return rec;
+
+  return rec;
 }
 
 /******************************************************************************/
@@ -111,11 +111,11 @@ static void write_bit(uint8_t val)
 static void write_byte(uint8_t val)
 {
   uint8_t i, mask = 1;
-  
+
   // write the byte by sending eight bits (LSB first)
-  for (i=0;i<8;i++)
+  for (i=0; i<8; i++)
   {
-	write_bit(val & mask);
+    write_bit(val & mask);
     mask = (mask << 1);
   }
 }
@@ -130,14 +130,14 @@ static void write_byte(uint8_t val)
 /******************************************************************************/
 static uint8_t read_bit (void)
 {
-  uint8_t rec;           
-  
+  uint8_t rec;
+
   DQ_o = 0;           // perform a very short low impuls
   DQ_o = 1;           // config the DQ-IO as input (high-z -> pull up)
   wait_us(15);
   rec = DQ_i;         // read the level on DQ (this is the read bit)
   wait_us(105);       // wait for end of slot
-  
+
   return rec;
 }
 
@@ -151,14 +151,14 @@ static uint8_t read_bit (void)
 /******************************************************************************/
 static uint8_t read_byte(void)
 {
-  uint8_t value = 0 , i;
-	
+  uint8_t value = 0, i;
+
   // read the byte by reading eight bits (LSB first)
-  for(i=0;i<8;i++)
+  for(i=0; i<8; i++)
   {
-	if(read_bit())
+    if(read_bit())
     {
-		value |= 0x01 << i;
+      value |= 0x01 << i;
     }
   }
   return value;
@@ -189,14 +189,14 @@ static void skip_ROM(void)
 static float conv_temp()
 {
   uint8_t sign = datareg[1] & 0x80;
-	int16_t temp = (datareg[1] << 8) + datareg[0];
+  int16_t temp = (datareg[1] << 8) + datareg[0];
 
   if(sign)
-	{
-		temp = ((temp ^ 0xffff) + 1) * -1;
-	}
-	
-	return temp/16.0;
+  {
+    temp = ((temp ^ 0xffff) + 1) * -1;
+  }
+
+  return temp/16.0;
 }
 
 /******************************************************************************/
@@ -209,25 +209,25 @@ static float conv_temp()
 /******************************************************************************/
 float get_temperature()
 {
-	int i=0;
-	float temp=0;
-	
-	send_mri();       //send Master Reset Impulse; must return 0x00
-	skip_ROM();              //simply calls all slaves instead of an specific address call
-		
-	write_byte(CONVERT_TEMP);	//Temperaturmessung ausfuehren
-	wait_ms(750);             //Messdauer abwarten
-		
-	send_mri();
-	skip_ROM();
-		
-	write_byte(READ_SCRATCHPAD); //Temperaturwert auslesen
-		
-	for(i=0;i<9;i++)    //Antwort einlesen: 9 Byte große Scratch Pad-Inhalt einlesen
-	{
-		datareg[i] = read_byte();
-	}
-	temp = conv_temp();
-	
-	return temp;
+  int i=0;
+  float temp=0;
+
+  send_mri();       //send Master Reset Impulse; must return 0x00
+  skip_ROM();              //simply calls all slaves instead of an specific address call
+
+  write_byte(CONVERT_TEMP); //Temperaturmessung ausfuehren
+  wait_ms(750);             //Messdauer abwarten
+
+  send_mri();
+  skip_ROM();
+
+  write_byte(READ_SCRATCHPAD); //Temperaturwert auslesen
+
+  for(i=0; i<9; i++)  //Antwort einlesen: 9 Byte große Scratch Pad-Inhalt einlesen
+  {
+    datareg[i] = read_byte();
+  }
+  temp = conv_temp();
+
+  return temp;
 }

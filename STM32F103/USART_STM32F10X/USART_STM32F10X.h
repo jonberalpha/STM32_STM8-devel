@@ -1,11 +1,11 @@
 /******************************************************************************/
 /* File Name:   USART_STM32F10X.h                                             */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        11.05.2020                                                    */
 /* Description: USART Functions                                               */
 /******************************************************************************/
-/* History: 	V1.00  creation                                                 */
+/* History:   V1.00  creation                                                 */
 /******************************************************************************/
 #ifndef USART_STM32F10X_H_INCLUDED
 #define USART_STM32F10X_H_INCLUDED
@@ -19,7 +19,7 @@
 #define EXPORT
 #else
 #define EXPORT extern
-#endif 
+#endif
 
 /*____________________________ EXPORTED FUNCTIONS ____________________________*/
 /******************************************************************************/

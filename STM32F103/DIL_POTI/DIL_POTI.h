@@ -1,11 +1,11 @@
 /******************************************************************************/
 /* File Name:   DIL_POTI.h                                                    */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        07.05.2020                                                    */
 /* Description: ADC Functions                                                 */
 /******************************************************************************/
-/* History: 	V1.00  creation                                                 */
+/* History:   V1.00  creation                                                 */
 /******************************************************************************/
 #ifndef DIL_POTI_H_INCLUDED
 #define DIL_POTI_H_INCLUDED
@@ -17,7 +17,7 @@
 #define EXPORT
 #else
 #define EXPORT extern
-#endif 
+#endif
 
 /*____________________________ EXPORTED FUNCTIONS ____________________________*/
 /******************************************************************************/

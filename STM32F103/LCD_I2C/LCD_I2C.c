@@ -51,14 +51,14 @@ void lcd_i2c_send_data(char data)
   //int i=0;
   char data_u, data_l;
   uint8_t data_t[4];
-  
+
   data_u = (data&0xf0);
   data_l = ((data<<4)&0xf0);
   data_t[0] = data_u|0x0D;  //en=1, rs=0
   data_t[1] = data_u|0x09;  //en=0, rs=0
   data_t[2] = data_l|0x0D;  //en=1, rs=0
   data_t[3] = data_l|0x09;  //en=0, rs=0
-  
+
   i2c_communicate(I2C1,SLAVE_ADDRESS_LCD,(uint8_t*) data_t,4,0,0);
 }
 
@@ -89,14 +89,14 @@ void lcd_i2c_put_curs(int row, int col)
 {
   switch(row)
   {
-    case 0:
-      col |= 0x80;
-      break;
-    case 1:
-      col |= 0xC0;
-      break;
+  case 0:
+    col |= 0x80;
+    break;
+  case 1:
+    col |= 0xC0;
+    break;
   }
-  
+
   lcd_i2c_send_cmd(col);
 }
 
@@ -111,10 +111,10 @@ void lcd_i2c_init(void)
 {
   //init wait
   wait_init();
-  
+
   //init I2C1, no pin remapping, no fast mode, APB1 clock is 8 MHz
   i2c_init(I2C1, true, false, 8000000);
-  
+
   // 4 bit initialisation
   wait_ms(50);              // wait for >40ms
   lcd_i2c_send_cmd(0x30);

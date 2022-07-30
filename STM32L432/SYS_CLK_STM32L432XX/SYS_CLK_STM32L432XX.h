@@ -1,8 +1,8 @@
 /******************************************************************************/
-/*   (C) Copyright - PRIVATE  2020 All rights reserved. AUSTRIA               */ 
-/*                                                                            */ 
+/*   (C) Copyright - PRIVATE  2020 All rights reserved. AUSTRIA               */
+/*                                                                            */
 /* File Name:   SYS_CLK_STM32L432XX.h                                         */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        28.09.2021                                                    */
 /* Description: SYS_CLK_STM32L432XX Library                                   */

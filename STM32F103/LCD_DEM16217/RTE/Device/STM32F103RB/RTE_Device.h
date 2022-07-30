@@ -168,7 +168,7 @@
 #define RTE_USART1_CTS_BIT               RTE_USART1_CTS_BIT_DEF
 #define RTE_USART1_RTS_PORT              RTE_USART1_RTS_PORT_DEF
 #define RTE_USART1_RTS_BIT               RTE_USART1_RTS_BIT_DEF
-#else 
+#else
 #define RTE_USART1_AF_REMAP              AFIO_USART1_NO_REMAP
 #define RTE_USART1_TX                    RTE_USART1_TX_DEF
 #define RTE_USART1_TX_PORT               RTE_USART1_TX_PORT_DEF
@@ -357,7 +357,7 @@
 #define RTE_USART2_RTS                   RTE_USART2_RTS_FULL
 #define RTE_USART2_RTS_PORT              RTE_USART2_RTS_PORT_FULL
 #define RTE_USART2_RTS_BIT               RTE_USART2_RTS_BIT_FULL
-#else 
+#else
 #define RTE_USART2_AF_REMAP              AFIO_USART2_NO_REMAP
 #define RTE_USART2_TX                    RTE_USART2_TX_DEF
 #define RTE_USART2_TX_PORT               RTE_USART2_TX_PORT_DEF
@@ -991,7 +991,7 @@
 #define RTE_SPI1_MOSI                   RTE_SPI1_MOSI_FULL
 #define RTE_SPI1_MOSI_PORT              RTE_SPI1_MOSI_PORT_FULL
 #define RTE_SPI1_MOSI_BIT               RTE_SPI1_MOSI_BIT_FULL
-#else 
+#else
 #define RTE_SPI1_AF_REMAP               AFIO_SPI1_NO_REMAP
 #define RTE_SPI1_SCK_PORT               RTE_SPI1_SCK_PORT_DEF
 #define RTE_SPI1_SCK_BIT                RTE_SPI1_SCK_BIT_DEF
@@ -1213,7 +1213,7 @@
 #define RTE_SPI3_MOSI                   RTE_SPI3_MOSI_FULL
 #define RTE_SPI3_MOSI_PORT              RTE_SPI3_MOSI_PORT_FULL
 #define RTE_SPI3_MOSI_BIT               RTE_SPI3_MOSI_BIT_FULL
-#else 
+#else
 #define RTE_SPI3_AF_REMAP               AFIO_SPI3_NO_REMAP
 #define RTE_SPI3_SCK_PORT               RTE_SPI3_SCK_PORT_DEF
 #define RTE_SPI3_SCK_BIT                RTE_SPI3_SCK_BIT_DEF
@@ -1262,52 +1262,52 @@
 //     <o> SDIO_CK Pin <0=>PC12
 #define   RTE_SDIO_CK_PORT_ID           0
 #if      (RTE_SDIO_CK_PORT_ID == 0)
-  #define RTE_SDIO_CK_PORT              GPIOC
-  #define RTE_SDIO_CK_PIN               12
+#define RTE_SDIO_CK_PORT              GPIOC
+#define RTE_SDIO_CK_PIN               12
 #else
-  #error "Invalid SDIO_CLK Pin Configuration!"
+#error "Invalid SDIO_CLK Pin Configuration!"
 #endif
 //     <o> SDIO_CMD Pin <0=>PD2
 #define   RTE_SDIO_CMD_PORT_ID          0
 #if      (RTE_SDIO_CMD_PORT_ID == 0)
-  #define RTE_SDIO_CMD_PORT             GPIOD
-  #define RTE_SDIO_CMD_PIN              2
+#define RTE_SDIO_CMD_PORT             GPIOD
+#define RTE_SDIO_CMD_PIN              2
 #else
-  #error "Invalid SDIO_CMD Pin Configuration!"
+#error "Invalid SDIO_CMD Pin Configuration!"
 #endif
 //     <o> SDIO_D0 Pin <0=>PC8
 #define   RTE_SDIO_D0_PORT_ID           0
 #if      (RTE_SDIO_D0_PORT_ID == 0)
-  #define RTE_SDIO_D0_PORT              GPIOC
-  #define RTE_SDIO_D0_PIN               8
+#define RTE_SDIO_D0_PORT              GPIOC
+#define RTE_SDIO_D0_PIN               8
 #else
-  #error "Invalid SDIO_DAT0 Pin Configuration!"
+#error "Invalid SDIO_DAT0 Pin Configuration!"
 #endif
 //     <e> SDIO_D[1 .. 3]
 #define   RTE_SDIO_BUS_WIDTH_4          1
 //       <o> SDIO_D1 Pin <0=>PC9
 #define   RTE_SDIO_D1_PORT_ID           0
 #if      (RTE_SDIO_D1_PORT_ID == 0)
-  #define RTE_SDIO_D1_PORT              GPIOC
-  #define RTE_SDIO_D1_PIN               9
+#define RTE_SDIO_D1_PORT              GPIOC
+#define RTE_SDIO_D1_PIN               9
 #else
-  #error "Invalid SDIO_D1 Pin Configuration!"
+#error "Invalid SDIO_D1 Pin Configuration!"
 #endif
 //       <o> SDIO_D2 Pin <0=>PC10
 #define   RTE_SDIO_D2_PORT_ID           0
 #if      (RTE_SDIO_D2_PORT_ID == 0)
-  #define RTE_SDIO_D2_PORT              GPIOC
-  #define RTE_SDIO_D2_PIN               10
+#define RTE_SDIO_D2_PORT              GPIOC
+#define RTE_SDIO_D2_PIN               10
 #else
-  #error "Invalid SDIO_D2 Pin Configuration!"
+#error "Invalid SDIO_D2 Pin Configuration!"
 #endif
 //       <o> SDIO_D3 Pin <0=>PC11
 #define   RTE_SDIO_D3_PORT_ID           0
 #if      (RTE_SDIO_D3_PORT_ID == 0)
-  #define RTE_SDIO_D3_PORT              GPIOC
-  #define RTE_SDIO_D3_PIN               11
+#define RTE_SDIO_D3_PORT              GPIOC
+#define RTE_SDIO_D3_PIN               11
 #else
-  #error "Invalid SDIO_D3 Pin Configuration!"
+#error "Invalid SDIO_D3 Pin Configuration!"
 #endif
 //     </e> SDIO_D[1 .. 3]
 //     <e> SDIO_D[4 .. 7]
@@ -1315,34 +1315,34 @@
 //       <o> SDIO_D4 Pin <0=>PB8
 #define   RTE_SDIO_D4_PORT_ID           0
 #if      (RTE_SDIO_D4_PORT_ID == 0)
-  #define RTE_SDIO_D4_PORT              GPIOB
-  #define RTE_SDIO_D4_PIN               8
+#define RTE_SDIO_D4_PORT              GPIOB
+#define RTE_SDIO_D4_PIN               8
 #else
-  #error "Invalid SDIO_D4 Pin Configuration!"
+#error "Invalid SDIO_D4 Pin Configuration!"
 #endif
 //       <o> SDIO_D5 Pin <0=>PB9
 #define   RTE_SDIO_D5_PORT_ID           0
 #if      (RTE_SDIO_D5_PORT_ID == 0)
-  #define RTE_SDIO_D5_PORT              GPIOB
-  #define RTE_SDIO_D5_PIN               9
+#define RTE_SDIO_D5_PORT              GPIOB
+#define RTE_SDIO_D5_PIN               9
 #else
-  #error "Invalid SDIO_D5 Pin Configuration!"
+#error "Invalid SDIO_D5 Pin Configuration!"
 #endif
 //       <o> SDIO_D6 Pin <0=>PC6
 #define   RTE_SDIO_D6_PORT_ID           0
 #if      (RTE_SDIO_D6_PORT_ID == 0)
-  #define RTE_SDIO_D6_PORT              GPIOC
-  #define RTE_SDIO_D6_PIN               6
+#define RTE_SDIO_D6_PORT              GPIOC
+#define RTE_SDIO_D6_PIN               6
 #else
-  #error "Invalid SDIO_D6 Pin Configuration!"
+#error "Invalid SDIO_D6 Pin Configuration!"
 #endif
 //       <o> SDIO_D7 Pin <0=>PC7
 #define   RTE_SDIO_D7_PORT_ID           0
 #if      (RTE_SDIO_D7_PORT_ID == 0)
-  #define RTE_SDIO_D7_PORT              GPIOC
-  #define RTE_SDIO_D7_PIN               7
+#define RTE_SDIO_D7_PORT              GPIOC
+#define RTE_SDIO_D7_PIN               7
 #else
-  #error "Invalid SDIO_D7 Pin Configuration!"
+#error "Invalid SDIO_D7 Pin Configuration!"
 #endif
 //     </e> SDIO_D[4 .. 7]
 //   </h> SDIO Peripheral Bus

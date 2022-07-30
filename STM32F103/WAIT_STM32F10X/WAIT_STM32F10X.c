@@ -1,11 +1,11 @@
 /******************************************************************************/
 /* File Name:   WAIT_STM32F10X.c                                              */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        07.05.2020                                                    */
 /* Description: Wait for x us or x ms                                         */
 /******************************************************************************/
-/* History: 	V1.00  creation                                                 */
+/* History:   V1.00  creation                                                 */
 /******************************************************************************/
 #define WAIT_STM32F10X_MOD
 #include "WAIT_STM32F10X.h"
@@ -23,10 +23,10 @@ static __IO uint32_t usTicks; //Store tick counts in us
 /******************************************************************************/
 void SysTick_Handler()
 {
-	if(usTicks != 0)
-	{
-		usTicks--;
-	}
+  if(usTicks != 0)
+  {
+    usTicks--;
+  }
 }
 
 /******************************************************************************/
@@ -38,10 +38,10 @@ void SysTick_Handler()
 /******************************************************************************/
 void wait_init()
 {
-	// Update SystemCoreClock value
-	SystemCoreClockUpdate();
-	// Configure the SysTick timer to overflow every 1 us
-	SysTick_Config(SystemCoreClock / 1000000);
+  // Update SystemCoreClock value
+  SystemCoreClockUpdate();
+  // Configure the SysTick timer to overflow every 1 us
+  SysTick_Config(SystemCoreClock / 1000000);
 }
 
 /******************************************************************************/
@@ -53,10 +53,10 @@ void wait_init()
 /******************************************************************************/
 void wait_us(uint32_t us)
 {
-	// Reload us value
-	usTicks = us;
-	// Wait until usTick reach zero
-	while(usTicks);
+  // Reload us value
+  usTicks = us;
+  // Wait until usTick reach zero
+  while(usTicks);
 }
 
 /******************************************************************************/
@@ -68,10 +68,10 @@ void wait_us(uint32_t us)
 /******************************************************************************/
 void wait_ms(uint32_t ms)
 {
-	// Wait until ms reach zero
-	while(ms--)
-	{
-		// Delay 1ms
-		wait_us(1000);
-	}
+  // Wait until ms reach zero
+  while(ms--)
+  {
+    // Delay 1ms
+    wait_us(1000);
+  }
 }

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   LCD_I2C.h                                                     */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        25.08.2020                                                    */
 /* Description: LCD-I2C Library                                               */
@@ -27,7 +27,7 @@
 /*                                                                            */
 /* Purpose:   send command to LCD display                                     */
 /* Input:     char cmd                                                        */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void lcd_i2c_send_cmd(char cmd);
 
@@ -36,7 +36,7 @@ EXPORT void lcd_i2c_send_cmd(char cmd);
 /*                                                                            */
 /* Purpose:   send data to LCD display                                        */
 /* Input:     char data                                                       */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void lcd_i2c_send_data(char data);
 
@@ -45,7 +45,7 @@ EXPORT void lcd_i2c_send_data(char data);
 /*                                                                            */
 /* Purpose:   send clear screen to LCD display                                */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void lcd_i2c_clear(void);
 
@@ -54,7 +54,7 @@ EXPORT void lcd_i2c_clear(void);
 /*                                                                            */
 /* Purpose:   set cursor location                                             */
 /* Input:     int row, int col                                                */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void lcd_i2c_put_curs(int row, int col);
 
@@ -63,7 +63,7 @@ EXPORT void lcd_i2c_put_curs(int row, int col);
 /*                                                                            */
 /* Purpose:   initialize LCD display                                          */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void lcd_i2c_init(void);
 
@@ -72,7 +72,7 @@ EXPORT void lcd_i2c_init(void);
 /*                                                                            */
 /* Purpose:   send string to LCD display                                      */
 /* Input:     char *str                                                       */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void lcd_i2c_send_string(char *str);
 

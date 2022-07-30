@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   ADC_POTI_STM32L432XX.h                                        */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        28.09.2021                                                    */
 /* Description: ADC_POTI_STM32L432XX Library                                  */

@@ -1,6 +1,6 @@
 /******************************************************************************/
 /* File Name:   USART_STM32L432XX.h                                           */
-/* Autor: 	    Berger Jonas                                                  */
+/* Autor:       Berger Jonas                                                  */
 /* Version:     V1.00                                                         */
 /* Date:        28.09.2021                                                    */
 /* Description: USART_STM32L432XX Library                                     */
@@ -34,7 +34,7 @@
 /*                                                                            */
 /* Purpose:   USART1 PA9 und PA10 initialisieren                              */
 /* Input:     BAUDRATE                                                        */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_init(unsigned long baud);
 
@@ -43,7 +43,7 @@ EXPORT void uart_init(unsigned long baud);
 /*                                                                            */
 /* Purpose:   Screen clear                                                    */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_clear(void);
 
@@ -52,7 +52,7 @@ EXPORT void uart_clear(void);
 /*                                                                            */
 /* Purpose:   Zeichen senden                                                  */
 /* Input:     char                                                            */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_put_char(char ch);
 
@@ -61,7 +61,7 @@ EXPORT void uart_put_char(char ch);
 /*                                                                            */
 /* Purpose:   Zeichenkette/String senden                                      */
 /* Input:     string                                                          */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_put_string(char *string);
 
@@ -90,7 +90,7 @@ EXPORT void uart_put_hex(char ch);
 /*                                                                            */
 /* Purpose:   Zeichen empfangen                                               */
 /* Input:                                                                     */
-/* return:	  char                                                            */
+/* return:    char                                                            */
 /******************************************************************************/
 EXPORT char uart_get_char(void);
 
@@ -108,7 +108,7 @@ EXPORT void uart_get_string(char *string);
 /*                                                                            */
 /* Purpose:   Cursor Position speichern                                       */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_saveCursorPos(void);
 
@@ -117,7 +117,7 @@ EXPORT void uart_saveCursorPos(void);
 /*                                                                            */
 /* Purpose:   Cursor Position wiederherstellen                                */
 /* Input:                                                                     */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_restoreCursorPos(void);
 
@@ -126,7 +126,7 @@ EXPORT void uart_restoreCursorPos(void);
 /*                                                                            */
 /* Purpose:   Cursor Position setzen                                          */
 /* Input:     char x, char y                                                  */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_setpos(char x,char y);
 
@@ -135,7 +135,7 @@ EXPORT void uart_setpos(char x,char y);
 /*                                                                            */
 /* Purpose:   uart ausgeben                                                   */
 /* Input:     Format uebergeben                                               */
-/* return:	                                                                  */
+/* return:                                                                    */
 /******************************************************************************/
 EXPORT void uart_printf(const char *format, ...);
 

@@ -22,21 +22,21 @@
 /******************************************************************************/
 void uart_init(unsigned long baud)
 {
-	//PA9 out TX/PA10 in RX
-	RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;  				//Enabel GPIOA CLK
-	GPIOA->MODER &= ~0x3C0000; 										//Delete Config-Bits of PA9 and PA10
-	GPIOA->MODER |= 0x280000; 										//PA9 and PA10 as AF
-	
-	GPIOA->OSPEEDR &= ~0x3C0000;									//Delete Speed
-	GPIOA->OSPEEDR |= 0x3C0000;										//Highest speed
-	
-	GPIOA->AFR[1] |= 0x770;												//Alternate function: AF7 (111) for USART1
-	
-	RCC->APB2ENR |= RCC_APB2ENR_USART1EN;					//Enable UART clock
-	USART1->BRR = SystemCoreClock/baud; 					//SystemCoreClock(e.g.: 8MHz/72MHz)/Baudrate
-	USART1->CR1 |= (USART_CR1_RE | USART_CR1_TE); //Enable TxD and RxD
-	USART1->CR2 &= ~USART_CR2_STOP;								//1 Stop bit
-	USART1->CR1 |= USART_CR1_UE; 									//Enable USART1
+  //PA9 out TX/PA10 in RX
+  RCC->AHB2ENR |= RCC_AHB2ENR_GPIOAEN;          //Enabel GPIOA CLK
+  GPIOA->MODER &= ~0x3C0000;                    //Delete Config-Bits of PA9 and PA10
+  GPIOA->MODER |= 0x280000;                     //PA9 and PA10 as AF
+
+  GPIOA->OSPEEDR &= ~0x3C0000;                  //Delete Speed
+  GPIOA->OSPEEDR |= 0x3C0000;                   //Highest speed
+
+  GPIOA->AFR[1] |= 0x770;                       //Alternate function: AF7 (111) for USART1
+
+  RCC->APB2ENR |= RCC_APB2ENR_USART1EN;         //Enable UART clock
+  USART1->BRR = SystemCoreClock/baud;           //SystemCoreClock(e.g.: 8MHz/72MHz)/Baudrate
+  USART1->CR1 |= (USART_CR1_RE | USART_CR1_TE); //Enable TxD and RxD
+  USART1->CR2 &= ~USART_CR2_STOP;               //1 Stop bit
+  USART1->CR1 |= USART_CR1_UE;                  //Enable USART1
 }
 
 /******************************************************************************/
@@ -48,12 +48,12 @@ void uart_init(unsigned long baud)
 /******************************************************************************/
 void uart_clear(void)
 {
-	// Clear Screen ...
+  // Clear Screen ...
   uart_put_char(ASCII_ESC);
-	uart_put_string(ASCII_CLRSCR);
-	// ... go to home position
-	uart_put_char(ASCII_ESC);
-	uart_put_string(ASCII_HOME);
+  uart_put_string(ASCII_CLRSCR);
+  // ... go to home position
+  uart_put_char(ASCII_ESC);
+  uart_put_string(ASCII_HOME);
 }
 
 /******************************************************************************/
@@ -65,8 +65,8 @@ void uart_clear(void)
 /******************************************************************************/
 void uart_put_char(char ch)
 {
-	while(!(USART1->ISR & USART_ISR_TXE));
-	USART1->TDR = ch;
+  while(!(USART1->ISR & USART_ISR_TXE));
+  USART1->TDR = ch;
 }
 
 /******************************************************************************/
@@ -78,10 +78,10 @@ void uart_put_char(char ch)
 /******************************************************************************/
 void uart_put_string(char *string)
 {
-	while(*string)
-	{
-		uart_put_char(*string++);
-	}
+  while(*string)
+  {
+    uart_put_char(*string++);
+  }
 }
 
 /******************************************************************************/
@@ -94,16 +94,16 @@ void uart_put_string(char *string)
 /******************************************************************************/
 void nib2asc(char *nib)
 {
-	*nib &= 0x0F; // extract Nibble
-	if(*nib >= 0x0A) // Hex Value A-F ?
-	{
-		*nib -= 0x0A;
-		*nib += 'A';
-	}
-	else // Hex value 0 - 9
-	{
-		*nib += '0';
-	}
+  *nib &= 0x0F; // extract Nibble
+  if(*nib >= 0x0A) // Hex Value A-F ?
+  {
+    *nib -= 0x0A;
+    *nib += 'A';
+  }
+  else // Hex value 0 - 9
+  {
+    *nib += '0';
+  }
 }
 
 /******************************************************************************/
@@ -116,13 +116,13 @@ void nib2asc(char *nib)
 /******************************************************************************/
 void uart_put_hex(char ch)
 {
-	char help;
-	help = (ch>>4)&0x0f; // Extract High Nibble
-	nib2asc(&help); // Convert to ASCII Code
-	uart_put_char(help); // Send High Nibble auf USART1
-	help = ch&0x0f; // Extract Low Nibble
-	nib2asc(&help); // Convert to ASCII Code
-	uart_put_char(help); // Send Low Nibble auf USART1
+  char help;
+  help = (ch>>4)&0x0f; // Extract High Nibble
+  nib2asc(&help); // Convert to ASCII Code
+  uart_put_char(help); // Send High Nibble auf USART1
+  help = ch&0x0f; // Extract Low Nibble
+  nib2asc(&help); // Convert to ASCII Code
+  uart_put_char(help); // Send Low Nibble auf USART1
 }
 
 /******************************************************************************/
@@ -134,11 +134,11 @@ void uart_put_hex(char ch)
 /******************************************************************************/
 char uart_get_char(void)
 {
-	char ch;
-	
-	while(!(USART1->ISR & USART_ISR_RXNE));
-	ch = USART1->RDR;
-	return ch;
+  char ch;
+
+  while(!(USART1->ISR & USART_ISR_RXNE));
+  ch = USART1->RDR;
+  return ch;
 }
 
 /******************************************************************************/
@@ -150,23 +150,23 @@ char uart_get_char(void)
 /******************************************************************************/
 void uart_get_string(char *string)
 {
-	char ch;
-	int cntr = 0;
-	
-	while(1)
-	{
-		ch = uart_get_char();
-		if(ch == 13) // \n
-		{
-			string[cntr] = 0;
-			return;
-		}
-		else
-		{
-			string[cntr] = ch;
-			cntr++;
-		}
-	}
+  char ch;
+  int cntr = 0;
+
+  while(1)
+  {
+    ch = uart_get_char();
+    if(ch == 13) // \n
+    {
+      string[cntr] = 0;
+      return;
+    }
+    else
+    {
+      string[cntr] = ch;
+      cntr++;
+    }
+  }
 }
 
 /******************************************************************************/
@@ -192,7 +192,7 @@ void uart_saveCursorPos(void)
 void uart_restoreCursorPos(void)
 {
   uart_put_char(ASCII_ESC);
-	uart_put_string(ASCII_RESPOS);
+  uart_put_string(ASCII_RESPOS);
 }
 
 /******************************************************************************/
@@ -205,7 +205,7 @@ void uart_restoreCursorPos(void)
 void uart_setpos(char x,char y)
 {
   uart_put_char(ASCII_ESC);
-	uart_printf("[%d;%dH",y,x);
+  uart_printf("[%d;%dH",y,x);
 }
 
 /******************************************************************************/
@@ -217,11 +217,11 @@ void uart_setpos(char x,char y)
 /******************************************************************************/
 void uart_printf(const char *format, ...)
 {
-	static char buffer[1024];
-	va_list argptr;
-	va_start( argptr, format );
-	vsprintf( buffer, format, argptr );
-	va_end  ( argptr );
-	buffer[1024-1]=0;
-	uart_put_string(buffer);
+  static char buffer[1024];
+  va_list argptr;
+  va_start( argptr, format );
+  vsprintf( buffer, format, argptr );
+  va_end  ( argptr );
+  buffer[1024-1]=0;
+  uart_put_string(buffer);
 }
