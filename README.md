@@ -1,9 +1,12 @@
-# STM32-devel
-A collection of different STM32 developments
+# STM32_STM8-devel
+A collection of different STM32/8 developments
 
 Used Microcontrollers:
 
 * STM32F103RB/C8
 * STM32L432KC
+* STM8S103F3
 
-Used IDE: *Keil µVision 5*
+Implemented with:
+* *Keil µVision 5*
+* bare-metal Makefile
