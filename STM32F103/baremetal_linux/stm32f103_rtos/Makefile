@@ -1,4 +1,4 @@
-RTOSLIB = ../0_Downloads/CMSIS_5
+RTOSLIB = ../CMSIS_5
 
 RTOSSRC += $(RTOSLIB)/CMSIS/RTOS2/RTX/Source/GCC/irq_cm3.S
 

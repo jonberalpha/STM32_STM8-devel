@@ -1,7 +1,7 @@
 PROJECT_ROOT := $(shell pwd)
 
 # Location of ARM GCC toolchain binaries
-# vorher: /opt/gcc-arm-none-eabi-10-2020-q4-major/bin
+# before: /opt/gcc-arm-none-eabi-10-2020-q4-major/bin
 TOOLSPATH ?= /usr/bin
 
 # STM32 board specification
@@ -13,7 +13,7 @@ LINKERSCRIPT = scripts/STM32F103X6_FLASH.ld
 SRCDIR   := src
 INCDIR   := inc
 ASMDIR   := startup
-CMSISDIR := ../0_Downloads/CMSIS_cut
+CMSISDIR := ../CMSIS_cut
 BUILDDIR := build
 
 # Set app name for output files
