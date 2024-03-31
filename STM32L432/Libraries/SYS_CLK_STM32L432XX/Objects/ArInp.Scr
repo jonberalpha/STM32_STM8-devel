@@ -1,0 +1,2 @@
+--create .\Objects\SYS_CLK_STM32L432XX.lib
+.\objects\sys_clk_stm32l432xx.o

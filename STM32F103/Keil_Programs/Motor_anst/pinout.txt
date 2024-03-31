@@ -1,0 +1,10 @@
+datasheet of 28BYJ-48:
+step angle for 8-step sequence: 5.625° each step => 64 steps for full rotation
+step angle for 4-step sequence: 11.25° each step => 32 steps for full rotation
+
+
+full step operation:
+1: PA0 a. PA1 | A a. B
+2: PA1 a. PA2 | B a. C
+3: PA2 a. PA3 | C a. D
+4: PA3 a. PA0 | D a. A

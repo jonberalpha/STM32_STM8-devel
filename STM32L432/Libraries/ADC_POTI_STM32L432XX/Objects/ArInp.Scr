@@ -1,0 +1,2 @@
+--create .\Objects\ADC_POTI_STM32L432XX.lib
+.\objects\adc_poti_stm32l432xx.o

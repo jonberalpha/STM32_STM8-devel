@@ -1,0 +1,2 @@
+--create .\Objects\USART_STM32L432XX.lib
+.\objects\usart_stm32l432xx.o

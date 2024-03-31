@@ -1,0 +1,2 @@
+--create .\Objects\WAIT_STM32F10X.lib
+.\objects\wait_stm32f10x.o

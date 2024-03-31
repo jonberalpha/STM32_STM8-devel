@@ -1,0 +1,237 @@
+Example trace messages
+
+===========================================
+Startup:
+===========================================
+
+setup
+InitEndpoints
+setAddr adr=0
+ESOF -> suspend
+SUSP 
+WKUP
+ESOF -> suspend
+
+===========================================
+Plug USB cable in:
+===========================================
+
+RESET
+InitEndpoints
+setAddr adr=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+isStandardRequest
+GET_DESCRIPTOR
+doGetDescr type 0001
+descDevice
+wrCtrlBlock count=18
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+IsStandardRequest
+GET_DESCRIPTOR
+CTR out
+logEpCtrl
+EpCtrlOut
+IsStandardRequest
+rdCtrlBlock maxlen=64, count=0
+clrBuf logEpNum=0
+RESET
+InitEndpoints
+setAddr adr=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+isStandardRequest
+SET_ADDRESS
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR setAddr adr=14
+in
+logEpCtrl
+IsStandardRequest
+default
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+isStandardRequest
+GET_DESCRIPTOR
+doGetDescr type 0001
+descDevice
+wrCtrlBlock count=18
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+IsStandardRequest
+GET_DESCRIPTOR
+CTR out
+logEpCtrl
+EpCtrlOut
+IsStandardRequest
+rdCtrlBlock maxlen=64, count=8
+clrBuf logEpNum=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+isStandardRequest
+GET_DESCRIPTOR
+doGetDescr type 0002
+descConfig
+wrCtrlBlock count=9
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+IsStandardRequest
+GET_DESCRIPTOR
+CTR out
+logEpCtrl
+EpCtrlOut
+IsStandardRequest
+rdCtrlBlock maxlen=64, count=0
+clrBuf logEpNum=0
+ESOF -> suspend
+RESET
+InitEndpoints
+setAddr adr=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+isStandardRequest
+GET_DESCRIPTOR
+doGetDescr type 0001
+descDevice
+wrCtrlBlock count=18
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+IsStandardRequest
+GET_DESCRIPTOR
+RESET
+InitEndpoints
+setAddr adr=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+isStandardRequest
+SET_ADDRESS
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR setAd
+
+===========================================
+Open COM port on host:
+===========================================
+
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+IsClassRequest
+SET_CONTROL_LINE_STATE
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+IsClassRequest
+SET_LINE_CODE
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR out
+logEpCtrl
+EpCtrlOut
+IsClassRequest
+SET_LINE_CODE
+rdCtrlBlock maxlen=7, count=8
+clrBuf logEpNum=0
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=7
+clrBuf logEpNum=0
+isStandardRequest
+SET_CONFIGURATION
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+IsStandardRequest
+default
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+
+===========================================
+Send data to the host:
+===========================================
+
+validateBuf logEpNum=1
+CTR in
+logEpBulkIn
+
+===========================================
+Receive data from host:
+===========================================
+CTR out
+logEpBulkOut
+clrBuf logEpNum=2
+
+===========================================
+Close COM port on host:
+===========================================
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+IsClassRequest
+SET_LINE_CODE
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR out
+logEpCtrl
+EpCtrlOut
+IsClassRequest
+SET_LINE_CODE
+rdCtrlBlock maxlen=7, count=8
+clrBuf logEpNum=0
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR out
+logEpCtrl
+SETUP
+rdCtrlBlock maxlen=8, count=8
+clrBuf logEpNum=0
+IsClassRequest
+SET_CONTROL_LINE_STATE
+wrCtrlBlock count=0
+validateBuf logEpNum=0
+CTR in
+logEpCtrl
+

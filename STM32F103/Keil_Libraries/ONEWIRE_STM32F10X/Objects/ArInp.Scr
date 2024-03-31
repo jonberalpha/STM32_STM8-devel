@@ -1,0 +1,3 @@
+--create .\Objects\ONEWIRE_STM32F10X.lib
+.\objects\onewire_stm32f10x.o
+.\MYLIBS\WAIT_STM32F10X\WAIT_STM32F10X.lib

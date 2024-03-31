@@ -1,0 +1,3 @@
+--create .\Objects\SENS_DS18X20.lib
+.\objects\sens_ds18x20.o
+.\WAIT_STM32F10X\WAIT_STM32F10X.lib

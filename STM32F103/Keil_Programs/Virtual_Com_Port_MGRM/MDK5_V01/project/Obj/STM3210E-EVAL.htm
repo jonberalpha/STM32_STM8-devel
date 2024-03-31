@@ -1,0 +1,1203 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+<title>Static Call Graph - [.\Obj\STM3210E-EVAL.axf]</title></head>
+<body><HR>
+<H1>Static Call Graph for image .\Obj\STM3210E-EVAL.axf</H1><HR>
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, RVCT4.0 [Build 728]: Last Updated: Wed Oct 18 09:45:05 2017
+<BR><P>
+<H3>Maximum Stack Usage =        144 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
+Call chain for Maximum Stack Depth:</H3>
+USB_LP_CAN_RX0_IRQHandler &rArr; USB_Istr &rArr; CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+<P>
+<H3>
+Mutually Recursive functions
+</H3> <LI><a href="#[287d078]">BusFaultException</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[287d078]">BusFaultException</a><BR>
+ <LI><a href="#[287cad8]">HardFaultException</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[287cad8]">HardFaultException</a><BR>
+ <LI><a href="#[287c9ac]">MemManageException</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[287c9ac]">MemManageException</a><BR>
+ <LI><a href="#[287c13c]">UsageFaultException</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[287c13c]">UsageFaultException</a><BR>
+ <LI><a href="#[28b646c]">SendChar</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[28b646c]">SendChar</a><BR>
+ <LI><a href="#[28abc60]">delay</a>&nbsp;&nbsp;&nbsp;&rArr;&nbsp;&nbsp;&nbsp;<a href="#[28abc60]">delay</a><BR>
+</UL>
+<P>
+<H3>
+Function Pointers
+</H3><UL>
+ <LI><a href="#[287ad50]">EP1_IN_Callback</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287ad14]">EP3_OUT_Callback</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[28b880c]">Virtual_Com_Port_init</a>
+ <LI><a href="#[28b8974]">Virtual_Com_Port_Reset</a>
+ <LI><a href="#[28b8884]">Virtual_Com_Port_Status_In</a>
+ <LI><a href="#[28b8848]">Virtual_Com_Port_Status_Out</a>
+ <LI><a href="#[28b8b18]">Virtual_Com_Port_Data_Setup</a>
+ <LI><a href="#[28b89b0]">Virtual_Com_Port_NoData_Setup</a>
+ <LI><a href="#[28b89ec]">Virtual_Com_Port_Get_Interface_Setting</a>
+ <LI><a href="#[28b8aa0]">Virtual_Com_Port_GetDeviceDescriptor</a>
+ <LI><a href="#[28b8adc]">Virtual_Com_Port_GetConfigDescriptor</a>
+ <LI><a href="#[28b8a28]">Virtual_Com_Port_GetStringDescriptor</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[28b8938]">Virtual_Com_Port_SetConfiguration</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[28b88fc]">Virtual_Com_Port_SetDeviceAddress</a>
+ <LI><a href="#[28ab684]">Reset_Handler</a>
+ <LI><a href="#[287c970]">NMIException</a>
+ <LI><a href="#[287cad8]">HardFaultException</a>
+ <LI><a href="#[287c9ac]">MemManageException</a>
+ <LI><a href="#[287d078]">BusFaultException</a>
+ <LI><a href="#[287c13c]">UsageFaultException</a>
+ <LI><a href="#[287c718]">SVCHandler</a>
+ <LI><a href="#[287cd30]">DebugMonitor</a>
+ <LI><a href="#[287c8f8]">PendSVC</a>
+ <LI><a href="#[287c6dc]">SysTickHandler</a>
+ <LI><a href="#[287c100]">WWDG_IRQHandler</a>
+ <LI><a href="#[287c934]">PVD_IRQHandler</a>
+ <LI><a href="#[287c6a0]">TAMPER_IRQHandler</a>
+ <LI><a href="#[287c844]">RTC_IRQHandler</a>
+ <LI><a href="#[287cb50]">FLASH_IRQHandler</a>
+ <LI><a href="#[287c8bc]">RCC_IRQHandler</a>
+ <LI><a href="#[287ccf4]">EXTI0_IRQHandler</a>
+ <LI><a href="#[287cc7c]">EXTI1_IRQHandler</a>
+ <LI><a href="#[287cc40]">EXTI2_IRQHandler</a>
+ <LI><a href="#[287cc04]">EXTI3_IRQHandler</a>
+ <LI><a href="#[287cbc8]">EXTI4_IRQHandler</a>
+ <LI><a href="#[287cfc4]">DMA1_Channel1_IRQHandler</a>
+ <LI><a href="#[287cf88]">DMA1_Channel2_IRQHandler</a>
+ <LI><a href="#[287cf4c]">DMA1_Channel3_IRQHandler</a>
+ <LI><a href="#[287cf10]">DMA1_Channel4_IRQHandler</a>
+ <LI><a href="#[287ced4]">DMA1_Channel5_IRQHandler</a>
+ <LI><a href="#[287ce98]">DMA1_Channel6_IRQHandler</a>
+ <LI><a href="#[287ce5c]">DMA1_Channel7_IRQHandler</a>
+ <LI><a href="#[287d0f0]">ADC1_2_IRQHandler</a>
+ <LI><a href="#[287c1b4]">USB_HP_CAN_TX_IRQHandler</a>
+ <LI><a href="#[287c178]">USB_LP_CAN_RX0_IRQHandler</a>
+ <LI><a href="#[287d03c]">CAN_RX1_IRQHandler</a>
+ <LI><a href="#[287d000]">CAN_SCE_IRQHandler</a>
+ <LI><a href="#[287cb8c]">EXTI9_5_IRQHandler</a>
+ <LI><a href="#[287c664]">TIM1_BRK_IRQHandler</a>
+ <LI><a href="#[287c5b0]">TIM1_UP_IRQHandler</a>
+ <LI><a href="#[287c5ec]">TIM1_TRG_COM_IRQHandler</a>
+ <LI><a href="#[287c628]">TIM1_CC_IRQHandler</a>
+ <LI><a href="#[287c574]">TIM2_IRQHandler</a>
+ <LI><a href="#[287c538]">TIM3_IRQHandler</a>
+ <LI><a href="#[287c4fc]">TIM4_IRQHandler</a>
+ <LI><a href="#[287ca60]">I2C1_EV_IRQHandler</a>
+ <LI><a href="#[287ca9c]">I2C1_ER_IRQHandler</a>
+ <LI><a href="#[287c9e8]">I2C2_EV_IRQHandler</a>
+ <LI><a href="#[287ca24]">I2C2_ER_IRQHandler</a>
+ <LI><a href="#[287c7cc]">SPI1_IRQHandler</a>
+ <LI><a href="#[287c790]">SPI2_IRQHandler</a>
+ <LI><a href="#[287c2a4]">USART1_IRQHandler</a>
+ <LI><a href="#[287c268]">USART2_IRQHandler</a>
+ <LI><a href="#[287c22c]">USART3_IRQHandler</a>
+ <LI><a href="#[287ccb8]">EXTI15_10_IRQHandler</a>
+ <LI><a href="#[287c880]">RTCAlarm_IRQHandler</a>
+ <LI><a href="#[287c1f0]">USBWakeUp_IRQHandler</a>
+ <LI><a href="#[287c40c]">TIM8_BRK_IRQHandler</a>
+ <LI><a href="#[287c358]">TIM8_UP_IRQHandler</a>
+ <LI><a href="#[287c394]">TIM8_TRG_COM_IRQHandler</a>
+ <LI><a href="#[287c3d0]">TIM8_CC_IRQHandler</a>
+ <LI><a href="#[287d0b4]">ADC3_IRQHandler</a>
+ <LI><a href="#[287cb14]">FSMC_IRQHandler</a>
+ <LI><a href="#[287c808]">SDIO_IRQHandler</a>
+ <LI><a href="#[287c4c0]">TIM5_IRQHandler</a>
+ <LI><a href="#[287c754]">SPI3_IRQHandler</a>
+ <LI><a href="#[287c31c]">UART4_IRQHandler</a>
+ <LI><a href="#[287c2e0]">UART5_IRQHandler</a>
+ <LI><a href="#[287c484]">TIM6_IRQHandler</a>
+ <LI><a href="#[287c448]">TIM7_IRQHandler</a>
+ <LI><a href="#[287ce20]">DMA2_Channel1_IRQHandler</a>
+ <LI><a href="#[287cde4]">DMA2_Channel2_IRQHandler</a>
+ <LI><a href="#[287cda8]">DMA2_Channel3_IRQHandler</a>
+ <LI><a href="#[287cd6c]">DMA2_Channel4_5_IRQHandler</a>
+ <LI><a href="#[2883978]">main</a>
+ <LI><a href="#[3426648]">__main</a>
+ <LI><a href="#[28b43d8]">Standard_GetStatus</a>
+ <LI><a href="#[28b4450]">Standard_GetConfiguration</a>
+ <LI><a href="#[28b4414]">Standard_GetInterface</a>
+ <LI><a href="#[28b8a64]">Virtual_Com_Port_GetLineCoding</a>
+ <LI><a href="#[28b88c0]">Virtual_Com_Port_SetLineCoding</a>
+ <LI><a href="#[28b6430]">fputc</a>
+ <LI><a href="#[3527450]">_sputc</a>
+ <LI><a href="#[287ad50]">EP1_IN_Callback</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287ad14]">EP3_OUT_Callback</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[28b880c]">Virtual_Com_Port_init</a>
+ <LI><a href="#[28b8974]">Virtual_Com_Port_Reset</a>
+ <LI><a href="#[28b8884]">Virtual_Com_Port_Status_In</a>
+ <LI><a href="#[28b8848]">Virtual_Com_Port_Status_Out</a>
+ <LI><a href="#[28b8b18]">Virtual_Com_Port_Data_Setup</a>
+ <LI><a href="#[28b89b0]">Virtual_Com_Port_NoData_Setup</a>
+ <LI><a href="#[28b89ec]">Virtual_Com_Port_Get_Interface_Setting</a>
+ <LI><a href="#[28b8aa0]">Virtual_Com_Port_GetDeviceDescriptor</a>
+ <LI><a href="#[28b8adc]">Virtual_Com_Port_GetConfigDescriptor</a>
+ <LI><a href="#[28b8a28]">Virtual_Com_Port_GetStringDescriptor</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[28b8938]">Virtual_Com_Port_SetConfiguration</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[287acd8]">NOP_Process</a>
+ <LI><a href="#[28b88fc]">Virtual_Com_Port_SetDeviceAddress</a>
+</UL>
+<P>
+<H3>
+Global Symbols
+</H3>
+<P><STRONG><a name="[3426648]"></a>__main</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry.o(.ARM.Collect$$$$00000000))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(.text)
+</UL>
+<P><STRONG><a name="[35235f8]"></a>_main_stk</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry2.o(.ARM.Collect$$$$00000001))
+
+<P><STRONG><a name="[35234cc]"></a>_main_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Calls]<UL><LI><a href="#[3522a7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[3523490]"></a>__main_after_scatterload</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry5.o(.ARM.Collect$$$$00000004))
+<BR><BR>[Called By]<UL><LI><a href="#[3522a7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__scatterload
+</UL>
+
+<P><STRONG><a name="[35233a0]"></a>_main_init</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, entry7.o(.ARM.Collect$$$$00000007))
+
+<P><STRONG><a name="[28ab684]"></a>Reset_Handler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_vector.o(.text))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[3523274]"></a>__aeabi_uidiv</STRONG> (Thumb, 0 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+
+<P><STRONG><a name="[3523238]"></a>__aeabi_uidivmod</STRONG> (Thumb, 44 bytes, Stack size 12 bytes, uidiv.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[3527540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[3522a7c]"></a>__scatterload</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, init.o(.text))
+<BR><BR>[Calls]<UL><LI><a href="#[3523490]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__main_after_scatterload
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35234cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_main_scatterload
+</UL>
+
+<P><STRONG><a name="[3522a40]"></a>__scatterload_rt2</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, init.o(.text), UNUSED)
+
+<P><STRONG><a name="[35220e0]"></a>__decompress</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[35220a4]"></a>__decompress1</STRONG> (Thumb, 94 bytes, Stack size unknown bytes, __dczerorl2.o(.text), UNUSED)
+
+<P><STRONG><a name="[287d0f0]"></a>ADC1_2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.ADC1_2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287d0b4]"></a>ADC3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.ADC3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287d078]"></a>BusFaultException</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.BusFaultException))
+<BR><BR>[Calls]<UL><LI><a href="#[287d078]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFaultException
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287d078]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;BusFaultException
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[28b42ac]"></a>ByteSwap</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, usb_regs.o(i.ByteSwap))
+<BR><BR>[Called By]<UL><LI><a href="#[28b44c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setup0_Process
+</UL>
+
+<P><STRONG><a name="[287d03c]"></a>CAN_RX1_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.CAN_RX1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287d000]"></a>CAN_SCE_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.CAN_SCE_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287adc8]"></a>CTR_LP</STRONG> (Thumb, 360 bytes, Stack size 40 bytes, usb_int.o(i.CTR_LP))
+<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b44c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setup0_Process
+<LI><a href="#[28b4540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Out0_Process
+<LI><a href="#[28b457c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;In0_Process
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287c0c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Istr
+</UL>
+
+<P><STRONG><a name="[28b4270]"></a>ClearDTOG_RX</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, usb_regs.o(i.ClearDTOG_RX))
+<BR><BR>[Called By]<UL><LI><a href="#[28b448c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_ClearFeature
+</UL>
+
+<P><STRONG><a name="[28b4234]"></a>ClearDTOG_TX</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, usb_regs.o(i.ClearDTOG_TX))
+<BR><BR>[Called By]<UL><LI><a href="#[28b448c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_ClearFeature
+</UL>
+
+<P><STRONG><a name="[28b87d0]"></a>Clear_Status_Out</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usb_regs.o(i.Clear_Status_Out))
+<BR><BR>[Called By]<UL><LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[287cfc4]"></a>DMA1_Channel1_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cf88]"></a>DMA1_Channel2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cf4c]"></a>DMA1_Channel3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cf10]"></a>DMA1_Channel4_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel4_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ced4]"></a>DMA1_Channel5_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel5_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ce98]"></a>DMA1_Channel6_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel6_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ce5c]"></a>DMA1_Channel7_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA1_Channel7_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ce20]"></a>DMA2_Channel1_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA2_Channel1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cde4]"></a>DMA2_Channel2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA2_Channel2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cda8]"></a>DMA2_Channel3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA2_Channel3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cd6c]"></a>DMA2_Channel4_5_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DMA2_Channel4_5_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cd30]"></a>DebugMonitor</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.DebugMonitor))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ad50]"></a>EP1_IN_Callback</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, usb_endp.o(i.EP1_IN_Callback))
+<BR>[Address Reference Count : 1]<UL><LI> usb_istr.o(.data)
+</UL>
+<P><STRONG><a name="[287ad14]"></a>EP3_OUT_Callback</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, usb_endp.o(i.EP3_OUT_Callback))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = EP3_OUT_Callback &rArr; PMAToUserBufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28838c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxValid
+<LI><a href="#[28b6fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PMAToUserBufferCopy
+<LI><a href="#[28b7024]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetEPRxCount
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_istr.o(.data)
+</UL>
+<P><STRONG><a name="[287ccf4]"></a>EXTI0_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI0_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ccb8]"></a>EXTI15_10_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI15_10_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cc7c]"></a>EXTI1_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cc40]"></a>EXTI2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cc04]"></a>EXTI3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cbc8]"></a>EXTI4_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI4_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cb8c]"></a>EXTI9_5_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.EXTI9_5_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287cb50]"></a>FLASH_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.FLASH_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[2884da0]"></a>FLASH_PrefetchBufferCmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_flash.o(i.FLASH_PrefetchBufferCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884d64]"></a>FLASH_SetLatency</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_flash.o(i.FLASH_SetLatency))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[287cb14]"></a>FSMC_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.FSMC_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[2884d28]"></a>GPIO_Init</STRONG> (Thumb, 160 bytes, Stack size 20 bytes, stm32f10x_gpio.o(i.GPIO_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = GPIO_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884cec]"></a>GPIO_ResetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_ResetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[2884e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Cable_Config
+</UL>
+
+<P><STRONG><a name="[2884cb0]"></a>GPIO_SetBits</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_gpio.o(i.GPIO_SetBits))
+<BR><BR>[Called By]<UL><LI><a href="#[2884e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Cable_Config
+</UL>
+
+<P><STRONG><a name="[2883900]"></a>GetChar</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, vcom.o(i.GetChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = GetChar
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28838c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxValid
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28b41f8]"></a>GetEPRxAddr</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, usb_regs.o(i.GetEPRxAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[28b47d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageOut
+</UL>
+
+<P><STRONG><a name="[28b7024]"></a>GetEPRxCount</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usb_regs.o(i.GetEPRxCount))
+<BR><BR>[Called By]<UL><LI><a href="#[287ad14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EP3_OUT_Callback
+</UL>
+
+<P><STRONG><a name="[28b41bc]"></a>GetEPTxAddr</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_regs.o(i.GetEPTxAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[28b4810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageIn
+</UL>
+
+<P><STRONG><a name="[2884fbc]"></a>Get_SerialNum</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, hw_config.o(i.Get_SerialNum))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Get_SerialNum
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b880c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_init
+</UL>
+
+<P><STRONG><a name="[287cad8]"></a>HardFaultException</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.HardFaultException))
+<BR><BR>[Calls]<UL><LI><a href="#[287cad8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFaultException
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287cad8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HardFaultException
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ca9c]"></a>I2C1_ER_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.I2C1_ER_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ca60]"></a>I2C1_EV_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.I2C1_EV_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287ca24]"></a>I2C2_ER_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.I2C2_ER_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c9e8]"></a>I2C2_EV_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.I2C2_EV_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[28b457c]"></a>In0_Process</STRONG> (Thumb, 78 bytes, Stack size 8 bytes, usb_core.o(i.In0_Process))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = In0_Process &rArr; DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b4504]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Post0_Process
+<LI><a href="#[28b4810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageIn
+<LI><a href="#[28b871c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetDeviceAddress
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287adc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTR_LP
+</UL>
+
+<P><STRONG><a name="[287c9ac]"></a>MemManageException</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.MemManageException))
+<BR><BR>[Calls]<UL><LI><a href="#[287c9ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManageException
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287c9ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MemManageException
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c970]"></a>NMIException</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.NMIException))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287acd8]"></a>NOP_Process</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usb_core.o(i.NOP_Process))
+<BR>[Address Reference Count : 3]<UL><LI> usb_prop.o(.data)
+<LI> usb_istr.o(.data)
+<LI> usb_istr.o(.data)
+</UL>
+<P><STRONG><a name="[2884c74]"></a>NVIC_Init</STRONG> (Thumb, 116 bytes, Stack size 20 bytes, stm32f10x_nvic.o(i.NVIC_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2884e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Interrupts_Config
+</UL>
+
+<P><STRONG><a name="[2884c38]"></a>NVIC_PriorityGroupConfig</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_nvic.o(i.NVIC_PriorityGroupConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Interrupts_Config
+</UL>
+
+<P><STRONG><a name="[2884bfc]"></a>NVIC_SetVectorTable</STRONG> (Thumb, 12 bytes, Stack size 0 bytes, stm32f10x_nvic.o(i.NVIC_SetVectorTable))
+<BR><BR>[Called By]<UL><LI><a href="#[2884e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Interrupts_Config
+</UL>
+
+<P><STRONG><a name="[28b4540]"></a>Out0_Process</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, usb_core.o(i.Out0_Process))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = Out0_Process &rArr; DataStageOut &rArr; PMAToUserBufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b4504]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Post0_Process
+<LI><a href="#[28b47d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageOut
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287adc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTR_LP
+</UL>
+
+<P><STRONG><a name="[28b6fe8]"></a>PMAToUserBufferCopy</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usb_mem.o(i.PMAToUserBufferCopy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PMAToUserBufferCopy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287ad14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EP3_OUT_Callback
+<LI><a href="#[28b47d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageOut
+</UL>
+
+<P><STRONG><a name="[287c934]"></a>PVD_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PVD_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c8f8]"></a>PendSVC</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PendSVC))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[28b4504]"></a>Post0_Process</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, usb_core.o(i.Post0_Process))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Post0_Process
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b86a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxCount
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b44c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setup0_Process
+<LI><a href="#[28b4540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Out0_Process
+<LI><a href="#[28b457c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;In0_Process
+</UL>
+
+<P><STRONG><a name="[28b8794]"></a>PowerOn</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, usb_pwr.o(i.PowerOn))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = PowerOn
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2884e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Cable_Config
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b880c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_init
+</UL>
+
+<P><STRONG><a name="[2884bc0]"></a>RCC_ADCCLKConfig</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_ADCCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884b84]"></a>RCC_APB1PeriphClockCmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB1PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_USBClock
+</UL>
+
+<P><STRONG><a name="[2884b48]"></a>RCC_APB2PeriphClockCmd</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_APB2PeriphClockCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884b0c]"></a>RCC_DeInit</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_DeInit))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[3429c30]"></a>RCC_GetClocksFreq</STRONG> (Thumb, 132 bytes, Stack size 12 bytes, stm32f10x_rcc.o(i.RCC_GetClocksFreq))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28847c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+</UL>
+
+<P><STRONG><a name="[2884ad0]"></a>RCC_GetFlagStatus</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_GetFlagStatus))
+<BR><BR>[Called By]<UL><LI><a href="#[2884878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_WaitForHSEStartUp
+<LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884a94]"></a>RCC_GetSYSCLKSource</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_GetSYSCLKSource))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884a58]"></a>RCC_HCLKConfig</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_HCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884a1c]"></a>RCC_HSEConfig</STRONG> (Thumb, 48 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_HSEConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[287c8bc]"></a>RCC_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.RCC_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[28849e0]"></a>RCC_PCLK1Config</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_PCLK1Config))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[28849a4]"></a>RCC_PCLK2Config</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_PCLK2Config))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[2884968]"></a>RCC_PLLCmd</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_PLLCmd))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[288492c]"></a>RCC_PLLConfig</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_PLLConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[28848f0]"></a>RCC_SYSCLKConfig</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_SYSCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[28848b4]"></a>RCC_USBCLKConfig</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, stm32f10x_rcc.o(i.RCC_USBCLKConfig))
+<BR><BR>[Called By]<UL><LI><a href="#[2884f08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_USBClock
+</UL>
+
+<P><STRONG><a name="[2884878]"></a>RCC_WaitForHSEStartUp</STRONG> (Thumb, 46 bytes, Stack size 12 bytes, stm32f10x_rcc.o(i.RCC_WaitForHSEStartUp))
+<BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = RCC_WaitForHSEStartUp
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2884ad0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetFlagStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+</UL>
+
+<P><STRONG><a name="[287c880]"></a>RTCAlarm_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.RTCAlarm_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c844]"></a>RTC_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.RTC_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c808]"></a>SDIO_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SDIO_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c7cc]"></a>SPI1_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SPI1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c790]"></a>SPI2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SPI2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c754]"></a>SPI3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SPI3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c718]"></a>SVCHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SVCHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[28b646c]"></a>SendChar</STRONG> (Thumb, 58 bytes, Stack size 16 bytes, vcom.o(i.SendChar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24 + In Cycle
+<LI>Call Chain = SendChar &rArr;  SendChar (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b637c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserToPMABufferCopy
+<LI><a href="#[28b63b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxValid
+<LI><a href="#[28b63f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxCount
+<LI><a href="#[28b646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b6430]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fputc
+<LI><a href="#[28b646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+
+<P><STRONG><a name="[28b8758]"></a>SetBTABLE</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, usb_regs.o(i.SetBTABLE))
+<BR><BR>[Called By]<UL><LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b871c]"></a>SetDeviceAddress</STRONG> (Thumb, 52 bytes, Stack size 20 bytes, usb_core.o(i.SetDeviceAddress))
+<BR><BR>[Stack]<UL><LI>Max Depth = 20<LI>Call Chain = SetDeviceAddress
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b457c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;In0_Process
+<LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b86e0]"></a>SetEPRxAddr</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPRxAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b86a4]"></a>SetEPRxCount</STRONG> (Thumb, 56 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPRxCount))
+<BR><BR>[Called By]<UL><LI><a href="#[28b448c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_ClearFeature
+<LI><a href="#[28b4504]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Post0_Process
+<LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b8668]"></a>SetEPRxStatus</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, usb_regs.o(i.SetEPRxStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SetEPRxStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28838c4]"></a>SetEPRxValid</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPRxValid))
+<BR><BR>[Called By]<UL><LI><a href="#[287ad14]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EP3_OUT_Callback
+<LI><a href="#[2883900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetChar
+<LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b862c]"></a>SetEPTxAddr</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPTxAddr))
+<BR><BR>[Called By]<UL><LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b63f4]"></a>SetEPTxCount</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPTxCount))
+<BR><BR>[Called By]<UL><LI><a href="#[28b47d4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageOut
+<LI><a href="#[28b4810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageIn
+<LI><a href="#[28b646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+
+<P><STRONG><a name="[28b85f0]"></a>SetEPTxStatus</STRONG> (Thumb, 44 bytes, Stack size 8 bytes, usb_regs.o(i.SetEPTxStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = SetEPTxStatus
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b448c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_ClearFeature
+<LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[28b63b8]"></a>SetEPTxValid</STRONG> (Thumb, 28 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPTxValid))
+<BR><BR>[Called By]<UL><LI><a href="#[28b646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+
+<P><STRONG><a name="[28b85b4]"></a>SetEPType</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, usb_regs.o(i.SetEPType))
+<BR><BR>[Called By]<UL><LI><a href="#[28b8974]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Reset
+</UL>
+
+<P><STRONG><a name="[2884f44]"></a>Set_System</STRONG> (Thumb, 154 bytes, Stack size 16 bytes, hw_config.o(i.Set_System))
+<BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = Set_System &rArr; GPIO_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2884878]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_WaitForHSEStartUp
+<LI><a href="#[28848f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_SYSCLKConfig
+<LI><a href="#[288492c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PLLConfig
+<LI><a href="#[2884968]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PLLCmd
+<LI><a href="#[28849a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PCLK2Config
+<LI><a href="#[28849e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_PCLK1Config
+<LI><a href="#[2884a1c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_HSEConfig
+<LI><a href="#[2884a58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_HCLKConfig
+<LI><a href="#[2884a94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetSYSCLKSource
+<LI><a href="#[2884ad0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetFlagStatus
+<LI><a href="#[2884b0c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_DeInit
+<LI><a href="#[2884b48]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB2PeriphClockCmd
+<LI><a href="#[2884bc0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_ADCCLKConfig
+<LI><a href="#[2884d28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_Init
+<LI><a href="#[2884d64]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_SetLatency
+<LI><a href="#[2884da0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FLASH_PrefetchBufferCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[2884f08]"></a>Set_USBClock</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, hw_config.o(i.Set_USBClock))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Set_USBClock
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28848b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_USBCLKConfig
+<LI><a href="#[2884b84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_APB1PeriphClockCmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28b44c8]"></a>Setup0_Process</STRONG> (Thumb, 96 bytes, Stack size 16 bytes, usb_core.o(i.Setup0_Process))
+<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b42ac]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ByteSwap
+<LI><a href="#[28b4504]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Post0_Process
+<LI><a href="#[28b475c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NoData_Setup0
+<LI><a href="#[28b4798]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Data_Setup0
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287adc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTR_LP
+</UL>
+
+<P><STRONG><a name="[28b448c]"></a>Standard_ClearFeature</STRONG> (Thumb, 222 bytes, Stack size 16 bytes, usb_core.o(i.Standard_ClearFeature))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = Standard_ClearFeature &rArr; SetEPTxStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b4234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearDTOG_TX
+<LI><a href="#[28b4270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearDTOG_RX
+<LI><a href="#[28b85f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxStatus
+<LI><a href="#[28b86a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxCount
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b475c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NoData_Setup0
+</UL>
+
+<P><STRONG><a name="[28b4450]"></a>Standard_GetConfiguration</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, usb_core.o(i.Standard_GetConfiguration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Standard_GetConfiguration
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_core.o(i.Data_Setup0)
+</UL>
+<P><STRONG><a name="[28b8578]"></a>Standard_GetDescriptorData</STRONG> (Thumb, 26 bytes, Stack size 0 bytes, usb_core.o(i.Standard_GetDescriptorData))
+<BR><BR>[Called By]<UL><LI><a href="#[28b8a28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_GetStringDescriptor
+<LI><a href="#[28b8aa0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_GetDeviceDescriptor
+<LI><a href="#[28b8adc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_GetConfigDescriptor
+</UL>
+
+<P><STRONG><a name="[28b4414]"></a>Standard_GetInterface</STRONG> (Thumb, 30 bytes, Stack size 8 bytes, usb_core.o(i.Standard_GetInterface))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Standard_GetInterface
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_core.o(i.Data_Setup0)
+</UL>
+<P><STRONG><a name="[28b43d8]"></a>Standard_GetStatus</STRONG> (Thumb, 126 bytes, Stack size 8 bytes, usb_core.o(i.Standard_GetStatus))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Standard_GetStatus
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_core.o(i.Data_Setup0)
+</UL>
+<P><STRONG><a name="[28b439c]"></a>Standard_SetConfiguration</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, usb_core.o(i.Standard_SetConfiguration))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Standard_SetConfiguration
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b475c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NoData_Setup0
+</UL>
+
+<P><STRONG><a name="[28b4360]"></a>Standard_SetDeviceFeature</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, usb_core.o(i.Standard_SetDeviceFeature))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Standard_SetDeviceFeature
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b475c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NoData_Setup0
+</UL>
+
+<P><STRONG><a name="[28b4324]"></a>Standard_SetEndPointFeature</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, usb_core.o(i.Standard_SetEndPointFeature))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = Standard_SetEndPointFeature
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b475c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NoData_Setup0
+</UL>
+
+<P><STRONG><a name="[28b42e8]"></a>Standard_SetInterface</STRONG> (Thumb, 60 bytes, Stack size 8 bytes, usb_core.o(i.Standard_SetInterface))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Standard_SetInterface
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b475c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NoData_Setup0
+</UL>
+
+<P><STRONG><a name="[287c6dc]"></a>SysTickHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.SysTickHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c6a0]"></a>TAMPER_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TAMPER_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c664]"></a>TIM1_BRK_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM1_BRK_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c628]"></a>TIM1_CC_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM1_CC_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c5ec]"></a>TIM1_TRG_COM_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM1_TRG_COM_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c5b0]"></a>TIM1_UP_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM1_UP_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c574]"></a>TIM2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c538]"></a>TIM3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c4fc]"></a>TIM4_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM4_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c4c0]"></a>TIM5_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM5_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c484]"></a>TIM6_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM6_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c448]"></a>TIM7_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM7_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c40c]"></a>TIM8_BRK_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM8_BRK_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c3d0]"></a>TIM8_CC_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM8_CC_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c394]"></a>TIM8_TRG_COM_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM8_TRG_COM_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c358]"></a>TIM8_UP_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.TIM8_UP_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c31c]"></a>UART4_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.UART4_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c2e0]"></a>UART5_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.UART5_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c2a4]"></a>USART1_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.USART1_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c268]"></a>USART2_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.USART2_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c22c]"></a>USART3_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.USART3_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[288483c]"></a>USART_Cmd</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, stm32f10x_usart.o(i.USART_Cmd))
+<BR><BR>[Called By]<UL><LI><a href="#[2884ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+</UL>
+
+<P><STRONG><a name="[2884ecc]"></a>USART_Config</STRONG> (Thumb, 120 bytes, Stack size 8 bytes, hw_config.o(i.USART_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = USART_Config &rArr; USART_Config_Default &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28847c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[288483c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Cmd
+<LI><a href="#[2884e90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config_Default
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b8884]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_Status_In
+</UL>
+
+<P><STRONG><a name="[2884e90]"></a>USART_Config_Default</STRONG> (Thumb, 54 bytes, Stack size 8 bytes, hw_config.o(i.USART_Config_Default))
+<BR><BR>[Stack]<UL><LI>Max Depth = 52<LI>Call Chain = USART_Config_Default &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28847c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Init
+<LI><a href="#[2884800]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_ITConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2884ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+<LI><a href="#[28b880c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Virtual_Com_Port_init
+</UL>
+
+<P><STRONG><a name="[2884800]"></a>USART_ITConfig</STRONG> (Thumb, 48 bytes, Stack size 8 bytes, stm32f10x_usart.o(i.USART_ITConfig))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = USART_ITConfig
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2884e90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config_Default
+</UL>
+
+<P><STRONG><a name="[28847c4]"></a>USART_Init</STRONG> (Thumb, 130 bytes, Stack size 32 bytes, stm32f10x_usart.o(i.USART_Init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 44<LI>Call Chain = USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[3429c30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RCC_GetClocksFreq
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2884e90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config_Default
+<LI><a href="#[2884ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+</UL>
+
+<P><STRONG><a name="[287c1f0]"></a>USBWakeUp_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.USBWakeUp_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[2884e54]"></a>USB_Cable_Config</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, hw_config.o(i.USB_Cable_Config))
+<BR><BR>[Calls]<UL><LI><a href="#[287c1b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_HP_CAN_TX_IRQHandler
+<LI><a href="#[2883888]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
+<LI><a href="#[2884cb0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_SetBits
+<LI><a href="#[2884cec]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_ResetBits
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b8794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PowerOn
+</UL>
+
+<P><STRONG><a name="[287c1b4]"></a>USB_HP_CAN_TX_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.USB_HP_CAN_TX_IRQHandler))
+<BR><BR>[Called By]<UL><LI><a href="#[2884e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Cable_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[2883888]"></a>USB_Init</STRONG> (Thumb, 22 bytes, Stack size 0 bytes, usb_init.o(i.USB_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[2884e54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Cable_Config
+</UL>
+
+<P><STRONG><a name="[2884e18]"></a>USB_Interrupts_Config</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, hw_config.o(i.USB_Interrupts_Config))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = USB_Interrupts_Config &rArr; NVIC_Init
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2884bfc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_SetVectorTable
+<LI><a href="#[2884c38]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_PriorityGroupConfig
+<LI><a href="#[2884c74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;NVIC_Init
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[287c0c4]"></a>USB_Istr</STRONG> (Thumb, 82 bytes, Stack size 16 bytes, usb_istr.o(i.USB_Istr))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = USB_Istr &rArr; CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[287adc8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CTR_LP
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287c178]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_LP_CAN_RX0_IRQHandler
+</UL>
+
+<P><STRONG><a name="[287c178]"></a>USB_LP_CAN_RX0_IRQHandler</STRONG> (Thumb, 4 bytes, Stack size 0 bytes, stm32f10x_it.o(i.USB_LP_CAN_RX0_IRQHandler))
+<BR><BR>[Stack]<UL><LI>Max Depth = 144<LI>Call Chain = USB_LP_CAN_RX0_IRQHandler &rArr; USB_Istr &rArr; CTR_LP &rArr; Setup0_Process &rArr; Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[287c0c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Istr
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[287c13c]"></a>UsageFaultException</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.UsageFaultException))
+<BR><BR>[Calls]<UL><LI><a href="#[287c13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFaultException
+</UL>
+<BR>[Called By]<UL><LI><a href="#[287c13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UsageFaultException
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[28b637c]"></a>UserToPMABufferCopy</STRONG> (Thumb, 36 bytes, Stack size 8 bytes, usb_mem.o(i.UserToPMABufferCopy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = UserToPMABufferCopy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b4810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageIn
+<LI><a href="#[28b646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+
+<P><STRONG><a name="[28b8b18]"></a>Virtual_Com_Port_Data_Setup</STRONG> (Thumb, 66 bytes, Stack size 8 bytes, usb_prop.o(i.Virtual_Com_Port_Data_Setup))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = Virtual_Com_Port_Data_Setup
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b8adc]"></a>Virtual_Com_Port_GetConfigDescriptor</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_GetConfigDescriptor))
+<BR><BR>[Calls]<UL><LI><a href="#[28b8578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_GetDescriptorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b8aa0]"></a>Virtual_Com_Port_GetDeviceDescriptor</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_GetDeviceDescriptor))
+<BR><BR>[Calls]<UL><LI><a href="#[28b8578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_GetDescriptorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b8a64]"></a>Virtual_Com_Port_GetLineCoding</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_GetLineCoding))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(i.Virtual_Com_Port_Data_Setup)
+</UL>
+<P><STRONG><a name="[28b8a28]"></a>Virtual_Com_Port_GetStringDescriptor</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_GetStringDescriptor))
+<BR><BR>[Calls]<UL><LI><a href="#[28b8578]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_GetDescriptorData
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b89ec]"></a>Virtual_Com_Port_Get_Interface_Setting</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_Get_Interface_Setting))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b89b0]"></a>Virtual_Com_Port_NoData_Setup</STRONG> (Thumb, 30 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_NoData_Setup))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b8974]"></a>Virtual_Com_Port_Reset</STRONG> (Thumb, 208 bytes, Stack size 8 bytes, usb_prop.o(i.Virtual_Com_Port_Reset))
+<BR><BR>[Stack]<UL><LI>Max Depth = 28<LI>Call Chain = Virtual_Com_Port_Reset &rArr; SetDeviceAddress
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28838c4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxValid
+<LI><a href="#[28b85b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPType
+<LI><a href="#[28b85f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxStatus
+<LI><a href="#[28b862c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxAddr
+<LI><a href="#[28b8668]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxStatus
+<LI><a href="#[28b86a4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxCount
+<LI><a href="#[28b86e0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPRxAddr
+<LI><a href="#[28b871c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetDeviceAddress
+<LI><a href="#[28b8758]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBTABLE
+<LI><a href="#[28b87d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Clear_Status_Out
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b8938]"></a>Virtual_Com_Port_SetConfiguration</STRONG> (Thumb, 16 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_SetConfiguration))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b88fc]"></a>Virtual_Com_Port_SetDeviceAddress</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_SetDeviceAddress))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b88c0]"></a>Virtual_Com_Port_SetLineCoding</STRONG> (Thumb, 18 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_SetLineCoding))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(i.Virtual_Com_Port_Data_Setup)
+</UL>
+<P><STRONG><a name="[28b8884]"></a>Virtual_Com_Port_Status_In</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, usb_prop.o(i.Virtual_Com_Port_Status_In))
+<BR><BR>[Stack]<UL><LI>Max Depth = 68<LI>Call Chain = Virtual_Com_Port_Status_In &rArr; USART_Config &rArr; USART_Config_Default &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2884ecc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b8848]"></a>Virtual_Com_Port_Status_Out</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, usb_prop.o(i.Virtual_Com_Port_Status_Out))
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[28b880c]"></a>Virtual_Com_Port_init</STRONG> (Thumb, 42 bytes, Stack size 8 bytes, usb_prop.o(i.Virtual_Com_Port_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 60<LI>Call Chain = Virtual_Com_Port_init &rArr; USART_Config_Default &rArr; USART_Init &rArr; RCC_GetClocksFreq
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2884e90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART_Config_Default
+<LI><a href="#[2884fbc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Get_SerialNum
+<LI><a href="#[28b8794]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PowerOn
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> usb_prop.o(.data)
+</UL>
+<P><STRONG><a name="[287c100]"></a>WWDG_IRQHandler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.WWDG_IRQHandler))
+<BR>[Address Reference Count : 1]<UL><LI> stm32f10x_vector.o(RESET)
+</UL>
+<P><STRONG><a name="[3527360]"></a>__0printf$6</STRONG> (Thumb, 22 bytes, Stack size 24 bytes, printf6.o(i.__0printf$6), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[3527540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[3527324]"></a>__1printf$6</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0printf$6), UNUSED)
+
+<P><STRONG><a name="[35272e8]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0printf$6))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[35271f8]"></a>__0sprintf$6</STRONG> (Thumb, 34 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[3527450]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_sputc
+<LI><a href="#[3527540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[35271bc]"></a>__1sprintf$6</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6), UNUSED)
+
+<P><STRONG><a name="[3527180]"></a>__2sprintf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0sprintf$6))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2sprintf
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[3522248]"></a>__scatterload_copy</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_copy), UNUSED)
+
+<P><STRONG><a name="[352220c]"></a>__scatterload_null</STRONG> (Thumb, 2 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_null), UNUSED)
+
+<P><STRONG><a name="[35221d0]"></a>__scatterload_zeroinit</STRONG> (Thumb, 14 bytes, Stack size unknown bytes, handlers.o(i.__scatterload_zeroinit), UNUSED)
+
+<P><STRONG><a name="[28839b4]"></a>adc_Init</STRONG> (Thumb, 94 bytes, Stack size 0 bytes, main.o(i.adc_Init))
+<BR><BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28b6430]"></a>fputc</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, vcom.o(i.fputc))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = fputc &rArr; SendChar &rArr;  SendChar (Cycle)
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b646c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SendChar
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printf6.o(i.__0printf$6)
+</UL>
+<P><STRONG><a name="[28835f4]"></a>lcd_clear</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lcd_4bit.o(i.lcd_clear))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_clear &rArr; set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2883540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[28ab918]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28835b8]"></a>lcd_init</STRONG> (Thumb, 146 bytes, Stack size 16 bytes, lcd_4bit.o(i.lcd_init))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = lcd_init &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28ab918]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[28ab954]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[28ab990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+<LI><a href="#[28abc60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[288357c]"></a>lcd_print</STRONG> (Thumb, 20 bytes, Stack size 8 bytes, lcd_4bit.o(i.lcd_print))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = lcd_print &rArr; lcd_putchar &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28ab990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+
+<P><STRONG><a name="[28ab990]"></a>lcd_putchar</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd_4bit.o(i.lcd_putchar))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = lcd_putchar &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28ab954]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[28abbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[288357c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[28835b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+</UL>
+
+<P><STRONG><a name="[28ab954]"></a>lcd_write_4bit</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, lcd_4bit.o(i.lcd_write_4bit))
+<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = lcd_write_4bit
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28abc60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28835b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[28ab918]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[28ab990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+
+<P><STRONG><a name="[28ab918]"></a>lcd_write_cmd</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcd_4bit.o(i.lcd_write_cmd))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28ab954]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[28abbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[2883540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[28835b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[28835f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+</UL>
+
+<P><STRONG><a name="[2883978]"></a>main</STRONG> (Thumb, 116 bytes, Stack size 8 bytes, main.o(i.main))
+<BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = main &rArr; lcd_init &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[2883540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;set_cursor
+<LI><a href="#[288357c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_print
+<LI><a href="#[28835b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[28835f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[2883888]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Init
+<LI><a href="#[2883900]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetChar
+<LI><a href="#[28839b4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;adc_Init
+<LI><a href="#[2884e18]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USB_Interrupts_Config
+<LI><a href="#[2884f08]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_USBClock
+<LI><a href="#[2884f44]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Set_System
+<LI><a href="#[3527180]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+<LI><a href="#[35272e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> entry7.o(.ARM.Collect$$$$00000007)
+</UL>
+<P><STRONG><a name="[2883540]"></a>set_cursor</STRONG> (Thumb, 20 bytes, Stack size 0 bytes, lcd_4bit.o(i.set_cursor))
+<BR><BR>[Stack]<UL><LI>Max Depth = 32<LI>Call Chain = set_cursor &rArr; lcd_write_cmd &rArr; wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28ab918]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28835f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_clear
+<LI><a href="#[2883978]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+</UL>
+<P>
+<H3>
+Local Symbols
+</H3>
+<P><STRONG><a name="[28b4810]"></a>DataStageIn</STRONG> (Thumb, 160 bytes, Stack size 40 bytes, usb_core.o(i.DataStageIn))
+<BR><BR>[Stack]<UL><LI>Max Depth = 48<LI>Call Chain = DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b41bc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetEPTxAddr
+<LI><a href="#[28b637c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UserToPMABufferCopy
+<LI><a href="#[28b63f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxCount
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b457c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;In0_Process
+<LI><a href="#[28b4798]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Data_Setup0
+</UL>
+
+<P><STRONG><a name="[28b47d4]"></a>DataStageOut</STRONG> (Thumb, 146 bytes, Stack size 32 bytes, usb_core.o(i.DataStageOut))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = DataStageOut &rArr; PMAToUserBufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b41f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GetEPRxAddr
+<LI><a href="#[28b63f4]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetEPTxCount
+<LI><a href="#[28b6fe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PMAToUserBufferCopy
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b4540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Out0_Process
+</UL>
+
+<P><STRONG><a name="[28b4798]"></a>Data_Setup0</STRONG> (Thumb, 380 bytes, Stack size 24 bytes, usb_core.o(i.Data_Setup0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = Data_Setup0 &rArr; DataStageIn &rArr; UserToPMABufferCopy
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b4810]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;DataStageIn
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b44c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setup0_Process
+</UL>
+
+<P><STRONG><a name="[28b475c]"></a>NoData_Setup0</STRONG> (Thumb, 196 bytes, Stack size 16 bytes, usb_core.o(i.NoData_Setup0))
+<BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = NoData_Setup0 &rArr; Standard_ClearFeature &rArr; SetEPTxStatus
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28b42e8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_SetInterface
+<LI><a href="#[28b4324]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_SetEndPointFeature
+<LI><a href="#[28b4360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_SetDeviceFeature
+<LI><a href="#[28b439c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_SetConfiguration
+<LI><a href="#[28b448c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Standard_ClearFeature
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28b44c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Setup0_Process
+</UL>
+
+<P><STRONG><a name="[28abc60]"></a>delay</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, lcd_4bit.o(i.delay))
+<BR><BR>[Calls]<UL><LI><a href="#[28abc60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28835b8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_init
+<LI><a href="#[28ab954]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_4bit
+<LI><a href="#[28abc24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
+<LI><a href="#[28abc60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+
+<P><STRONG><a name="[28abc24]"></a>lcd_read_status</STRONG> (Thumb, 134 bytes, Stack size 16 bytes, lcd_4bit.o(i.lcd_read_status))
+<BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28abc60]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28abbe8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;wait_while_busy
+</UL>
+
+<P><STRONG><a name="[28abbe8]"></a>wait_while_busy</STRONG> (Thumb, 14 bytes, Stack size 8 bytes, lcd_4bit.o(i.wait_while_busy))
+<BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = wait_while_busy &rArr; lcd_read_status
+</UL>
+<BR>[Calls]<UL><LI><a href="#[28abc24]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_read_status
+</UL>
+<BR>[Called By]<UL><LI><a href="#[28ab918]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_write_cmd
+<LI><a href="#[28ab990]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcd_putchar
+</UL>
+
+<P><STRONG><a name="[3527540]"></a>_printf_core</STRONG> (Thumb, 764 bytes, Stack size 104 bytes, printf6.o(i._printf_core), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[3523238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_uidivmod
+<LI><a href="#[35274c8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_pre_padding
+<LI><a href="#[3527504]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_post_padding
+</UL>
+<BR>[Called By]<UL><LI><a href="#[35271f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$6
+<LI><a href="#[3527360]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0printf$6
+</UL>
+
+<P><STRONG><a name="[3527504]"></a>_printf_post_padding</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, printf6.o(i._printf_post_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[3527540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[35274c8]"></a>_printf_pre_padding</STRONG> (Thumb, 46 bytes, Stack size 24 bytes, printf6.o(i._printf_pre_padding), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[3527540]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_core
+</UL>
+
+<P><STRONG><a name="[3527450]"></a>_sputc</STRONG> (Thumb, 10 bytes, Stack size 0 bytes, printf6.o(i._sputc))
+<BR><BR>[Called By]<UL><LI><a href="#[35271f8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__0sprintf$6
+</UL>
+<BR>[Address Reference Count : 1]<UL><LI> printf6.o(i.__0sprintf$6)
+</UL><P>
+<H3>
+Undefined Global Symbols
+</H3><HR></body></html>

@@ -1,0 +1,5 @@
+1. Sensor: 
+26 01 19 3B 5A 38 B3 28 (HEX)
+
+2. Sensor: 
+31 01 19 3B 5A 73 6E 28 (HEX)

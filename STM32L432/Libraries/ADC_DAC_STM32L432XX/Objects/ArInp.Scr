@@ -1,0 +1,2 @@
+--create .\Objects\ADC_DAC_STM32L432XX.lib
+.\objects\adc_dac_stm32l432xx.o

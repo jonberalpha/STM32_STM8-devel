@@ -1,0 +1,2 @@
+--create .\Objects\DELAY_STM32L432XX.lib
+.\objects\delay_stm32l432xx.o

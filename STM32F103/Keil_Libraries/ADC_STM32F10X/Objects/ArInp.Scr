@@ -1,0 +1,2 @@
+--create .\Objects\ADC_STM32F10X.lib
+.\objects\adc_stm32f10x.o

@@ -1,0 +1,7 @@
+--cpu Cortex-M3 --pd "__EVAL SETA 1" -g --apcs=interwork 
+-I.\RTE\Device\STM32F103RB
+-I.\RTE\_ARM_Minimalsystem
+-IC:\Keil_v5\ARM\PACK\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+-IC:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+--pd "__UVISION_VERSION SETA 524" --pd "_RTE_ SETA 1" --pd "STM32F10X_MD SETA 1"
+--list .\listings\delay.lst --xref -o .\objects\delay.o --depend .\objects\delay.d "MYLIBS\Delay\Delay.s"

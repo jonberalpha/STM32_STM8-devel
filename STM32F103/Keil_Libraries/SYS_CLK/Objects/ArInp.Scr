@@ -1,0 +1,2 @@
+--create .\Objects\SYS_CLK.lib
+.\objects\sys_clk.o
